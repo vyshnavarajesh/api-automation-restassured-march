@@ -20,7 +20,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
 
 public class CreateBookingAPI_POST {
 	
-	@Test(priority=1, enabled=false)
+	@Test(priority=1, enabled=true)
 	public void createBookingWithHashMap() {
 		HashMap<String, Object> bookingDates = new HashMap<String, Object>(); // child object within bookingData
 		bookingDates.put("checkin", "2026-07-01");
@@ -57,7 +57,7 @@ public class CreateBookingAPI_POST {
 		RestAssured
 					.given().log().all().baseUri("https://restful-booker.herokuapp.com")
 					.contentType(ContentType.JSON)
-					.header("Content-Type","application/json")
+					//.header("Content-Type","application/json")
 					.body(createBooking)
 					.when()
 					.post("/booking")
@@ -67,7 +67,7 @@ public class CreateBookingAPI_POST {
 					.body("booking.firstname",equalTo("Test FirstName")); //equalTo is coming from hamcrest dependency
 	}
 	
-	@Test(priority=3, enabled=true)
+	@Test(priority=3, enabled=false)
 	public void createBookingWithJSONFile() throws FileNotFoundException {
 		
 		File f = new File(System.getProperty("user.dir")+"/src/test/resources/jsonFiles/createBookingReqBody.json");
@@ -88,6 +88,8 @@ public class CreateBookingAPI_POST {
 					.time(lessThan(50000L)) // responsetime - lessThan is coming from hamcrest dependency
 					.body("booking.firstname",equalTo("test firstname"))//equalTo is coming from hamcrest dependency
 					.body(matchesJsonSchemaInClasspath("schemas/createBookingAPISchema.json"));
+		
+					//body(JsonSchemaValidator.matchesJsonSchema())
 	}
 
 }

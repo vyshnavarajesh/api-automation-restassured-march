@@ -10,7 +10,7 @@ import io.restassured.response.Response;
 
 import static org.hamcrest.Matchers.lessThan;
 
-public class GetAllBookingAPI_Get {
+public class GetAllBookingAPI_GET {
 	
 	@Test
 	public static void getAllBookings() {
