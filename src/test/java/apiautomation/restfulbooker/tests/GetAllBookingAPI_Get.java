@@ -4,6 +4,7 @@ package apiautomation.restfulbooker.tests;
 
 import org.testng.annotations.Test;
 
+import apiautomation.restfulbooker.constants.Constants;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -16,10 +17,10 @@ public class GetAllBookingAPI_GET {
 	public static void getAllBookings() {
 
 		Response res =RestAssured.
-						given().baseUri("https://restful-booker.herokuapp.com/booking")
+						given().baseUri(Constants.BaseURI)
 									.contentType(ContentType.JSON) // pre condition
 									.when()
-									.get() // actual test
+									.get(Constants.BasePath) // actual test
 									.then().assertThat().statusCode(200) // assertions
 									.statusLine("HTTP/1.1 200 OK")
 									.header("Content-Type","application/json; charset=utf-8")

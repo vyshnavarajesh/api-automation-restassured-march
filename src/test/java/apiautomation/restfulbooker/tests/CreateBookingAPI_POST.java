@@ -10,6 +10,7 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.testng.annotations.Test;
 
+import apiautomation.restfulbooker.constants.Constants;
 import apiautomation.restfulbooker.pojos.BookingDatesPOJO;
 import apiautomation.restfulbooker.pojos.CreateBookingPOJO;
 import io.restassured.RestAssured;
@@ -36,7 +37,7 @@ public class CreateBookingAPI_POST {
 		bookingData.put("additionalneeds", "TV");
 		
 		RestAssured
-					.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+					.given().log().all().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON)
 					.header("Content-Type","application/json")
 					.body(bookingData)
@@ -55,7 +56,7 @@ public class CreateBookingAPI_POST {
 		CreateBookingPOJO createBooking = new CreateBookingPOJO("Test FirstName","Test LastName",1000,true,bookingdates,"TV");
 		
 		RestAssured
-					.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+					.given().log().all().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON)
 					//.header("Content-Type","application/json")
 					.body(createBooking)
@@ -77,7 +78,7 @@ public class CreateBookingAPI_POST {
 		JSONObject bookingdata = new JSONObject(jwt);
 		
 		RestAssured
-					.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+					.given().log().all().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON)
 					.header("Content-Type","application/json")
 					.body(bookingdata.toString())
@@ -87,7 +88,7 @@ public class CreateBookingAPI_POST {
 					.statusCode(200)
 					.time(lessThan(50000L)) // responsetime - lessThan is coming from hamcrest dependency
 					.body("booking.firstname",equalTo("test firstname"))//equalTo is coming from hamcrest dependency
-					.body(matchesJsonSchemaInClasspath("schemas/createBookingAPISchema.json"));
+					.body(matchesJsonSchemaInClasspath(Constants.createBookingAPISchema));
 		
 					//body(JsonSchemaValidator.matchesJsonSchema())
 	}
