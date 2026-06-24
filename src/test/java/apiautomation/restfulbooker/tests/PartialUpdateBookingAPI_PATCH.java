@@ -10,12 +10,14 @@ import org.testng.ITestContext;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import apiautomation.restfulbooker.constants.Constants;
 import apiautomation.restfulbooker.pojos.BookingDatesPOJO;
 import apiautomation.restfulbooker.pojos.CreateBookingPOJO;
 import apiautomation.restfulbooker.utils.TokenGenUtil;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class PartialUpdateBookingAPI_PATCH {
 	
@@ -39,7 +41,7 @@ public class PartialUpdateBookingAPI_PATCH {
 		bookingData.put("additionalneeds", "TV");
 		
 		Response res = RestAssured
-					.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+					.given().log().all().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON)
 					.header("Content-Type","application/json")
 					.body(bookingData)
@@ -75,7 +77,7 @@ public class PartialUpdateBookingAPI_PATCH {
 		
 		
 	RestAssured
-					.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+					.given().log().all().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON)
 					.header("Cookie","token="+token)
 					.pathParam("bookingID", bookingID)
@@ -85,6 +87,7 @@ public class PartialUpdateBookingAPI_PATCH {
 					.then().log().body()
 					.statusCode(200)
 					.time(lessThan(50000L)) // responsetime - lessThan is coming from hamcrest dependency
+					.body(matchesJsonSchemaInClasspath(Constants.updateBookingAPISchema))
 					.body("firstname",equalTo("Test firstname update"));
 		
 	}

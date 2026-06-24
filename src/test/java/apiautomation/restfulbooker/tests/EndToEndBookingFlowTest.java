@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import apiautomation.restfulbooker.constants.Constants;
 import apiautomation.restfulbooker.utils.TokenGenUtil;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -38,12 +39,12 @@ public class EndToEndBookingFlowTest {
 		bookingData.put("additionalneeds", "TV");
 		
 		Response res = RestAssured
-					.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+					.given().log().all().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON)
-					.header("Content-Type","application/json")
+					//.header("Content-Type","application/json")
 					.body(bookingData)
 					.when()
-					.post("/booking")
+					.post(Constants.BasePath)
 					.then().log().body()
 					.statusCode(200)
 					.time(lessThan(5000L)) // responsetime - lessThan is coming from hamcrest dependency
@@ -68,11 +69,11 @@ public class EndToEndBookingFlowTest {
 		
 		
 		Response getresponse = RestAssured.
-		given().baseUri("https://restful-booker.herokuapp.com")
+		given().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON) // pre condition
 					.pathParam("bookingID", bookingID)
 					.when()
-					.get("/booking/{bookingID}") // actual test
+					.get(Constants.BasePath+"/{bookingID}") // actual test
 					.then().assertThat().statusCode(200) // assertions
 					.statusLine("HTTP/1.1 200 OK")
 					.header("Content-Type","application/json; charset=utf-8")
@@ -86,13 +87,13 @@ public class EndToEndBookingFlowTest {
 		updateData.put("lastname", "Test lastname one update");
 		
 	RestAssured
-					.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+					.given().log().all().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON)
 					.header("Cookie","token="+token)
 					.pathParam("bookingID", bookingID)
 					.body(updateData)
 					.when()
-					.put("/booking/{bookingID}")
+					.put(Constants.BasePath+"/{bookingID}")
 					.then().log().body()
 					.statusCode(200)
 					.time(lessThan(50000L)) // responsetime - lessThan is coming from hamcrest dependency
@@ -117,13 +118,13 @@ public class EndToEndBookingFlowTest {
 		
 		
 	RestAssured
-					.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+					.given().log().all().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON)
 					.header("Cookie","token="+token)
 					.pathParam("bookingID", bookingID)
 					.body(updateBookingData)
 					.when()
-					.patch("/booking/{bookingID}")
+					.patch(Constants.BasePath+"/{bookingID}")
 					.then().log().body()
 					.statusCode(200)
 					.time(lessThan(50000L)) // responsetime - lessThan is coming from hamcrest dependency
@@ -140,12 +141,12 @@ public class EndToEndBookingFlowTest {
 		String token = (String) context.getAttribute("tokenValue");
 		
 	RestAssured
-					.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+					.given().log().all().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON)
 					.header("Cookie","token="+token)
 					.pathParam("bookingID", bookingID)
 					.when()
-					.delete("/booking/{bookingID}")
+					.delete(Constants.BasePath+"/{bookingID}")
 					.then().log().body()
 					.statusCode(201)
 					.time(lessThan(50000L)) ;// responsetime - lessThan is coming from hamcrest dependency

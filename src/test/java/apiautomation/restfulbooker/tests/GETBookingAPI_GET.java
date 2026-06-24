@@ -12,6 +12,7 @@ import apiautomation.restfulbooker.pojos.CreateBookingPOJO;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class GETBookingAPI_GET {
 	
@@ -53,6 +54,7 @@ public class GETBookingAPI_GET {
 							.header("Content-Type","application/json; charset=utf-8")
 							.time(lessThan(5000L))
 							.log().all()
+							.body(matchesJsonSchemaInClasspath(Constants.getBookingAPISchema))
 							.body("firstname", equalTo("Test FirstName"));
 
 	}

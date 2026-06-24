@@ -10,6 +10,7 @@ import org.testng.ITestContext;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import apiautomation.restfulbooker.constants.Constants;
 import apiautomation.restfulbooker.pojos.BookingDatesPOJO;
 import apiautomation.restfulbooker.pojos.CreateBookingPOJO;
 import apiautomation.restfulbooker.utils.TokenGenUtil;
@@ -39,7 +40,7 @@ public class UpdateBookingAPI_PUT {
 		bookingData.put("additionalneeds", "TV");
 		
 		Response res = RestAssured
-					.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+					.given().log().all().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON)
 					.header("Content-Type","application/json")
 					.body(bookingData)
@@ -80,7 +81,7 @@ public class UpdateBookingAPI_PUT {
 		
 		
 	RestAssured
-					.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+					.given().log().all().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON)
 					.header("Cookie","token="+token)
 					.pathParam("bookingID", bookingID)
@@ -105,7 +106,7 @@ public class UpdateBookingAPI_PUT {
 		
 		
 		Response getresponse = RestAssured.
-		given().baseUri("https://restful-booker.herokuapp.com/booking")
+		given().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON) // pre condition
 					.pathParam("bookingID", bookingID)
 					.when()
@@ -123,7 +124,7 @@ public class UpdateBookingAPI_PUT {
 		updateData.put("lastname", "Test lastname one update");
 		
 	RestAssured
-					.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+					.given().log().all().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON)
 					.header("Cookie","token="+token)
 					.pathParam("bookingID", bookingID)

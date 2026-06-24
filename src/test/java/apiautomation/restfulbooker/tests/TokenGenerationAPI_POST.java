@@ -6,6 +6,7 @@ import static org.hamcrest.Matchers.lessThan;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
+import apiautomation.restfulbooker.constants.Constants;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 
@@ -19,7 +20,7 @@ public class TokenGenerationAPI_POST {
 		data.put("password","password123");
 		
 		RestAssured
-		.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+		.given().log().all().baseUri(Constants.BaseURI)
 		.contentType(ContentType.JSON)
 		.body(data.toString())
 		.when()
@@ -37,7 +38,7 @@ public class TokenGenerationAPI_POST {
 		data.put("password","password123");
 		
 		RestAssured
-		.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+		.given().log().all().baseUri(Constants.BaseURI)
 		.contentType(ContentType.JSON)
 		.body(data.toString())
 		.when()

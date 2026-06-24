@@ -13,7 +13,7 @@ public class FakerBookingTestUtility {
 	static String checkin = faker.date().future(10, TimeUnit.DAYS).toInstant().toString().split("T")[0];
 	static String checkout = faker.date().future(20, TimeUnit.DAYS).toInstant().toString().split("T")[0];
 	
-	
+	// Positive test Data
 	public static CreateBookingPOJO getValidBooking() {
 	
 				BookingDatesPOJO bookingdates = new BookingDatesPOJO(checkin,checkout);
@@ -22,6 +22,7 @@ public class FakerBookingTestUtility {
 				
 	}
 	
+	//Positive test Data
 	public static CreateBookingPOJO partialUpdateValidBooking() {
 		
 		BookingDatesPOJO bookingdates = new BookingDatesPOJO(checkin,checkout);
@@ -30,7 +31,7 @@ public class FakerBookingTestUtility {
 		
 }
 	
-	
+	// Negative Test Data
 	public static CreateBookingPOJO inValidBookingWithOutFirstName() {
 		
 		BookingDatesPOJO bookingdates = new BookingDatesPOJO(checkin,checkout);
@@ -39,6 +40,7 @@ public class FakerBookingTestUtility {
 		
 }
 	
+	// Negative Test Data
 	public static CreateBookingPOJO inValidBookingPrice() {
 		
 		BookingDatesPOJO bookingdates = new BookingDatesPOJO(checkin,checkout);

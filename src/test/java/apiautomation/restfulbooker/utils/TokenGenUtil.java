@@ -4,6 +4,7 @@ import static org.hamcrest.Matchers.lessThan;
 
 import org.json.JSONObject;
 
+import apiautomation.restfulbooker.constants.Constants;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -17,11 +18,11 @@ public class TokenGenUtil {
 		data.put("password","password123");
 		
 		Response res = RestAssured
-		.given().log().all().baseUri("https://restful-booker.herokuapp.com")
+		.given().log().all().baseUri(Constants.BaseURI)
 		.contentType(ContentType.JSON)
 		.body(data.toString())
 		.when()
-		.post("/auth")
+		.post(Constants.AuthorizationEndPoint)
 		.then().log().body()
 		.statusCode(200)
 		.time(lessThan(50000L)).extract().response();
