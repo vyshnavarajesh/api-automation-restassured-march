@@ -1,4 +1,4 @@
-package apiautomation.restfulbooker.tests;
+package apiautomation.restfulbooker.testsV1;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.lessThan;
@@ -17,8 +17,9 @@ import apiautomation.restfulbooker.utils.TokenGenUtil;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
-public class UpdateBookingAPI_PUT {
+public class PartialUpdateBookingAPI_PATCH {
 	
 	@BeforeMethod
 	public void beforeMethod(ITestContext context)
@@ -59,25 +60,20 @@ public class UpdateBookingAPI_PUT {
 		context.setAttribute("tokenValue", tokenValue);
 	}
 	
-	@Test(enabled=false)
-	public void updateBooking(ITestContext context)
+	@Test(enabled=true)
+	public void partialupdateBooking(ITestContext context)
 	{
 		
 		/* setting the context value */
 		int bookingID = (int) context.getAttribute("bookingId");
 		String token = (String) context.getAttribute("tokenValue");
 		
-		HashMap<String, Object> bookingDates = new HashMap<String, Object>(); // child object within bookingData
-		bookingDates.put("checkin", "2026-07-01");
-		bookingDates.put("checkout", "2026-07-06");
 		
 		HashMap<String, Object> updateBookingData = new HashMap<String, Object>();
 		updateBookingData.put("firstname", "Test firstname update");
 		updateBookingData.put("lastname", "Test lastname update");
 		updateBookingData.put("totalprice", 5000);
-		updateBookingData.put("depositpaid",true);
-		updateBookingData.put("bookingdates", bookingDates);
-		updateBookingData.put("additionalneeds", "TV");
+	
 		
 		
 	RestAssured
@@ -87,55 +83,15 @@ public class UpdateBookingAPI_PUT {
 					.pathParam("bookingID", bookingID)
 					.body(updateBookingData)
 					.when()
-					.put("/booking/{bookingID}")
+					.patch("/booking/{bookingID}")
 					.then().log().body()
 					.statusCode(200)
 					.time(lessThan(50000L)) // responsetime - lessThan is coming from hamcrest dependency
+					.body(matchesJsonSchemaInClasspath(Constants.updateBookingAPISchema))
 					.body("firstname",equalTo("Test firstname update"));
 		
 	}
 	
-	@Test
-	//reusing get info for update call
-	public void updateBookingWithGet(ITestContext context)
-	{
-		
-		/* setting the context value */
-		int bookingID = (int) context.getAttribute("bookingId");
-		String token = (String) context.getAttribute("tokenValue");
-		
-		
-		Response getresponse = RestAssured.
-		given().baseUri(Constants.BaseURI)
-					.contentType(ContentType.JSON) // pre condition
-					.pathParam("bookingID", bookingID)
-					.when()
-					.get("/{bookingID}") // actual test
-					.then().assertThat().statusCode(200) // assertions
-					.statusLine("HTTP/1.1 200 OK")
-					.header("Content-Type","application/json; charset=utf-8")
-					.time(lessThan(5000L))
-					.log().all()
-					.body("firstname", equalTo("Test firstname one")).extract().response();
-		
-		Map<String,Object> updateData = getresponse.jsonPath().getMap("$");
-		
-		updateData.put("firstname", "Test firstname one update");
-		updateData.put("lastname", "Test lastname one update");
-		
-	RestAssured
-					.given().log().all().baseUri(Constants.BaseURI)
-					.contentType(ContentType.JSON)
-					.header("Cookie","token="+token)
-					.pathParam("bookingID", bookingID)
-					.body(updateData)
-					.when()
-					.put("/booking/{bookingID}")
-					.then().log().body()
-					.statusCode(200)
-					.time(lessThan(50000L)) // responsetime - lessThan is coming from hamcrest dependency
-					.body("firstname",equalTo("Test firstname one update"));
-		
-	}
+	
 
 }

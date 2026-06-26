@@ -1,4 +1,4 @@
-package apiautomation.restfulbooker.tests;
+package apiautomation.restfulbooker.testsV1;
 
 import java.io.File;
 import java.io.FileNotFoundException;

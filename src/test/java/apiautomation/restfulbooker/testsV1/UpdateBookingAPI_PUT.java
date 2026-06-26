@@ -1,4 +1,4 @@
-package apiautomation.restfulbooker.tests;
+package apiautomation.restfulbooker.testsV1;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.lessThan;
@@ -7,19 +7,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.testng.ITestContext;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import apiautomation.restfulbooker.constants.Constants;
+import apiautomation.restfulbooker.pojos.BookingDatesPOJO;
+import apiautomation.restfulbooker.pojos.CreateBookingPOJO;
 import apiautomation.restfulbooker.utils.TokenGenUtil;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class EndToEndBookingFlowTest {
+public class UpdateBookingAPI_PUT {
 	
-	@BeforeClass
+	@BeforeMethod
 	public void beforeMethod(ITestContext context)
 	{
 		/* Token Generation */
@@ -41,10 +42,10 @@ public class EndToEndBookingFlowTest {
 		Response res = RestAssured
 					.given().log().all().baseUri(Constants.BaseURI)
 					.contentType(ContentType.JSON)
-					//.header("Content-Type","application/json")
+					.header("Content-Type","application/json")
 					.body(bookingData)
 					.when()
-					.post(Constants.BasePath)
+					.post("/booking")
 					.then().log().body()
 					.statusCode(200)
 					.time(lessThan(5000L)) // responsetime - lessThan is coming from hamcrest dependency
@@ -58,7 +59,43 @@ public class EndToEndBookingFlowTest {
 		context.setAttribute("tokenValue", tokenValue);
 	}
 	
-	@Test (priority=1)
+	@Test(enabled=false)
+	public void updateBooking(ITestContext context)
+	{
+		
+		/* setting the context value */
+		int bookingID = (int) context.getAttribute("bookingId");
+		String token = (String) context.getAttribute("tokenValue");
+		
+		HashMap<String, Object> bookingDates = new HashMap<String, Object>(); // child object within bookingData
+		bookingDates.put("checkin", "2026-07-01");
+		bookingDates.put("checkout", "2026-07-06");
+		
+		HashMap<String, Object> updateBookingData = new HashMap<String, Object>();
+		updateBookingData.put("firstname", "Test firstname update");
+		updateBookingData.put("lastname", "Test lastname update");
+		updateBookingData.put("totalprice", 5000);
+		updateBookingData.put("depositpaid",true);
+		updateBookingData.put("bookingdates", bookingDates);
+		updateBookingData.put("additionalneeds", "TV");
+		
+		
+	RestAssured
+					.given().log().all().baseUri(Constants.BaseURI)
+					.contentType(ContentType.JSON)
+					.header("Cookie","token="+token)
+					.pathParam("bookingID", bookingID)
+					.body(updateBookingData)
+					.when()
+					.put("/booking/{bookingID}")
+					.then().log().body()
+					.statusCode(200)
+					.time(lessThan(50000L)) // responsetime - lessThan is coming from hamcrest dependency
+					.body("firstname",equalTo("Test firstname update"));
+		
+	}
+	
+	@Test
 	//reusing get info for update call
 	public void updateBookingWithGet(ITestContext context)
 	{
@@ -73,7 +110,7 @@ public class EndToEndBookingFlowTest {
 					.contentType(ContentType.JSON) // pre condition
 					.pathParam("bookingID", bookingID)
 					.when()
-					.get(Constants.BasePath+"/{bookingID}") // actual test
+					.get("/{bookingID}") // actual test
 					.then().assertThat().statusCode(200) // assertions
 					.statusLine("HTTP/1.1 200 OK")
 					.header("Content-Type","application/json; charset=utf-8")
@@ -93,68 +130,12 @@ public class EndToEndBookingFlowTest {
 					.pathParam("bookingID", bookingID)
 					.body(updateData)
 					.when()
-					.put(Constants.BasePath+"/{bookingID}")
+					.put("/booking/{bookingID}")
 					.then().log().body()
 					.statusCode(200)
 					.time(lessThan(50000L)) // responsetime - lessThan is coming from hamcrest dependency
 					.body("firstname",equalTo("Test firstname one update"));
 		
 	}
-	
-	@Test(priority=2)
-	public void partialupdateBooking(ITestContext context)
-	{
-		
-		/* setting the context value */
-		int bookingID = (int) context.getAttribute("bookingId");
-		String token = (String) context.getAttribute("tokenValue");
-		
-		
-		HashMap<String, Object> updateBookingData = new HashMap<String, Object>();
-		updateBookingData.put("firstname", "Test firstname update");
-		updateBookingData.put("lastname", "Test lastname update");
-		updateBookingData.put("totalprice", 5000);
-	
-		
-		
-	RestAssured
-					.given().log().all().baseUri(Constants.BaseURI)
-					.contentType(ContentType.JSON)
-					.header("Cookie","token="+token)
-					.pathParam("bookingID", bookingID)
-					.body(updateBookingData)
-					.when()
-					.patch(Constants.BasePath+"/{bookingID}")
-					.then().log().body()
-					.statusCode(200)
-					.time(lessThan(50000L)) // responsetime - lessThan is coming from hamcrest dependency
-					.body("firstname",equalTo("Test firstname update"));
-		
-	}
-	
-	@Test(priority=3)
-	public void deleteBooking(ITestContext context)
-	{
-		
-		/* setting the context value */
-		int bookingID = (int) context.getAttribute("bookingId");
-		String token = (String) context.getAttribute("tokenValue");
-		
-	RestAssured
-					.given().log().all().baseUri(Constants.BaseURI)
-					.contentType(ContentType.JSON)
-					.header("Cookie","token="+token)
-					.pathParam("bookingID", bookingID)
-					.when()
-					.delete(Constants.BasePath+"/{bookingID}")
-					.then().log().body()
-					.statusCode(201)
-					.time(lessThan(50000L)) ;// responsetime - lessThan is coming from hamcrest dependency
-				
-		
-	}
-	
-	
-	
 
 }

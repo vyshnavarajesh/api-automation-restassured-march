@@ -6,7 +6,7 @@ public class Constants {
 	public static final String BasePath = "/booking";
 	public static final String AuthorizationEndPoint = "/auth";
 	public static final String CreateBookingBasePath = "/create/booking"; // this is an example
-	public static final String GetBookingBasePath = "/booking/search";
+	public static final String GetBookingBasePath = "/booking/{booking}";
 	
 	public static final String createBookingAPISchema = "schemas/createBookingAPISchema.json";
 	public static final String getBookingAPISchema = "schemas/getBookingAPISchema.json";

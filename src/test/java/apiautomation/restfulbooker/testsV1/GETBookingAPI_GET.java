@@ -1,4 +1,4 @@
-package apiautomation.restfulbooker.tests;
+package apiautomation.restfulbooker.testsV1;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.lessThan;
