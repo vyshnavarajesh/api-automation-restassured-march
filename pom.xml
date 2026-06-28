@@ -15,7 +15,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.13.0</version>
 				<configuration>
-					<release>11</release> <!-- Match your target Java version -->
+					<release>21</release> <!-- Match your target Java version -->
 				</configuration>
 			</plugin>
 
@@ -27,9 +27,8 @@
 				<configuration>
 					<!-- Optional parameters to filter tests -->
 					<suiteXmlFiles>
-						<!--
-						suiteXmlFile>./testng-suites/testng.xml</suiteXmlFile -->
-						<suiteXmlFile>${suiteFileName}</suiteXmlFile>
+						<suiteXmlFile>./testng-suites/testng.xml</suiteXmlFile >
+						<!--suiteXmlFile>${suiteFileName}</suiteXmlFile-->
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

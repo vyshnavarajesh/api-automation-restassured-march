@@ -1,0 +1,80 @@
+2026-06-27 17:06:25 [main] DEBUG TestNG - suiteXmlPath: "/Users/hareeshvyshnava/eclipse-workspace/apiautomation/testng-suites/testng.xml"
+2026-06-27 17:06:25 [main] WARN  Configuration - Detected a static method [apiautomation.restfulbooker.testsWithRestUtil.CreateBookingAPI_POST_WithRestUtility.beforeClass()]. Static configuration methods can cause unexpected behavior.
+2026-06-27 17:06:25 [main] INFO  Utils - [TestNG] Running:
+  /Users/hareeshvyshnava/eclipse-workspace/apiautomation/testng-suites/testng.xml
+
+2026-06-27 17:06:37 [main] INFO  CreateBookingAPI_POST_WithRestUtility - Tests Started
+2026-06-27 17:06:37 [main] DEBUG RestUtil - ========== POST REQUEST STARTED ==========
+2026-06-27 17:06:37 [main] DEBUG RestUtil - Base URI: https://restful-booker.herokuapp.com
+2026-06-27 17:06:37 [main] DEBUG RestUtil - Base Path: /booking
+2026-06-27 17:06:37 [main] DEBUG RestUtil - Request Headers: {Content-Type=application/json}
+2026-06-27 17:06:37 [main] DEBUG RestUtil - Request Body (JSON):
+{
+  "firstname" : "Mickie",
+  "lastname" : "Franecki",
+  "totalprice" : 11904,
+  "depositpaid" : true,
+  "bookingdates" : {
+    "checkin" : "2026-06-29",
+    "checkout" : "2026-07-02"
+  },
+  "additionalneeds" : "Books"
+}
+2026-06-27 17:06:37 [main] DEBUG RestUtil - Expected Status Code: 201
+2026-06-27 17:06:37 [main] DEBUG RestUtil - Expected Response Time: 6000 ms
+2026-06-27 17:06:39 [main] INFO  RestUtil - ========== RESPONSE RECEIVED ==========
+2026-06-27 17:06:39 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-27 17:06:39 [main] INFO  RestUtil - Response Time: 1548 ms
+2026-06-27 17:06:39 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-27 17:06:39 [main] INFO  RestUtil - Response Body Length: 201
+2026-06-27 17:06:39 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3133,
+  "booking" : {
+    "firstname" : "Mickie",
+    "lastname" : "Franecki",
+    "totalprice" : 11904,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-06-29",
+      "checkout" : "2026-07-02"
+    },
+    "additionalneeds" : "Books"
+  }
+}
+2026-06-27 23:11:00 [main] DEBUG TestNG - suiteXmlPath: "/Users/hareeshvyshnava/eclipse-workspace/apiautomation/testng-suites/testng.xml"
+2026-06-27 23:11:00 [main] WARN  Configuration - Detected a static method [apiautomation.restfulbooker.testsWithRestUtil.CreateBookingAPI_POST_WithRestUtility.beforeClass()]. Static configuration methods can cause unexpected behavior.
+2026-06-27 23:11:13 [main] INFO  CreateBookingAPI_POST_WithRestUtility - Tests Started
+2026-06-27 23:11:13 [main] DEBUG RestUtil - ========== POST REQUEST STARTED ==========
+2026-06-27 23:11:13 [main] DEBUG RestUtil - Request Headers: {Content-Type=application/json}
+2026-06-27 23:11:13 [main] DEBUG RestUtil - Request Body (JSON):
+{
+  "firstname" : "Winston",
+  "lastname" : "Willms",
+  "totalprice" : 67293,
+  "depositpaid" : true,
+  "bookingdates" : {
+    "checkin" : "2026-06-30",
+    "checkout" : "2026-07-13"
+  },
+  "additionalneeds" : "TV"
+}
+2026-06-27 23:11:15 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-27 23:11:15 [main] INFO  RestUtil - Response Time: 1355 ms
+2026-06-27 23:11:15 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-27 23:11:15 [main] INFO  RestUtil - Response Body Length: 196
+2026-06-27 23:11:15 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 312,
+  "booking" : {
+    "firstname" : "Winston",
+    "lastname" : "Willms",
+    "totalprice" : 67293,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-06-30",
+      "checkout" : "2026-07-13"
+    },
+    "additionalneeds" : "TV"
+  }
+}

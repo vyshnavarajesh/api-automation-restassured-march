@@ -9,7 +9,7 @@
  
     <classes>
       <class name="apiautomation.restfulbooker.testsV1.EndToEndBookingFlowTest"/>
-      <!--class name="apiautomation.restfulbooker.testsWithRestUtil.CreateBookingAPI_POST_WithRestUtility.java"/-->
+      <class name="apiautomation.restfulbooker.testsWithRestUtil.CreateBookingAPI_POST_WithRestUtility"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

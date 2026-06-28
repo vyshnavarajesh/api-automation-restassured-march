@@ -1,0 +1,41 @@
+# Declare loggers 
+status = warn
+name=LoggingConfig
+appenders=a_console, a_rolling
+rootLogger.level=info
+rootLogger.appenderRefs=a_console,a_rolling
+rootLogger.appenderRef.a_console.ref=StdoutAppender
+rootLogger.appenderRef.a_rolling.ref=DailyRollingAppender
+
+# RestAssured Logger - Set to DEBUG to capture all request/response details
+logger.restassured.name=io.restassured
+logger.io.restassured.level=debug
+logger.io.restassured.appenderRefs=a_console,a_rolling
+logger.io.restassured.appenderRef.a_console.ref=StdoutAppender
+logger.io.restassured.appenderRef.a_rolling.ref=DailyRollingAppender
+
+# HTTPClient Logger
+logger.httpclient.name=org.apache.http
+logger.org.apache.http.level=debug
+
+# Console logger
+appender.a_console.type=Console
+appender.a_console.name=StdoutAppender
+appender.a_console.layout.type=PatternLayout
+appender.a_console.layout.pattern=%d{ISO8601} [%t] %-5p (%c:%L) - %m%n
+
+# File logger (Rolling daily)
+appender.a_rolling.type=RollingFile
+appender.a_rolling.name=DailyRollingAppender
+appender.a_rolling.fileName=./logs/api-automation.log
+appender.a_rolling.filePattern=./logs/api-automation-%d{yyyy-MM-dd}.log
+appender.a_rolling.layout.type=PatternLayout
+appender.a_rolling.layout.pattern=%d{ISO8601} [%t] %-5p (%c:%L) - %m%n
+
+# Rolling Policies
+appender.a_rolling.policies.type=Policies
+appender.a_rolling.policies.time.type=TimeBasedTriggeringPolicy
+appender.a_rolling.policies.time.interval=1
+appender.a_rolling.policies.time.modulate=true
+appender.a_rolling.strategy.type=DefaultRolloverStrategy
+appender.a_rolling.strategy.max=7

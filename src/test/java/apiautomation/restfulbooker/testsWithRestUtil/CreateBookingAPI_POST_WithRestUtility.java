@@ -67,6 +67,8 @@ public class CreateBookingAPI_POST_WithRestUtility {
 	@Test(priority=2, enabled=true)
 	public void createBookingWithPOJO_withRestUtilV1() {
 		
+		logger.info("Tests Started");
+		
 		HashMap<String, Object> headers = new HashMap<String, Object>();
 		headers.put("Content-Type", "application/json");
 		
@@ -74,6 +76,6 @@ public class CreateBookingAPI_POST_WithRestUtility {
 		
 		Response res = RestUtil.postRequest(Constants.BaseURI, Constants.BasePath, headers,createBooking, 201, 6000L);
 		System.out.print(res.toString());
-		
+		logger.info("Tests Completed");
 	}	
 }
