@@ -38,7 +38,7 @@ public class RestUtil {
 	public static Response postRequest(String baseuri, String basepath, HashMap<String, Object> headers,
 			Object postReqBody, int statusCode, long responseTime) {
 
-		logger.debug("========== POST REQUEST STARTED ==========");
+		logger.debug("########### POST REQUEST STARTED ###########");
 		logger.debug("Request Headers: {}", headers);
 		logger.debug("Request Body (JSON):\n{}", serializeToJson(postReqBody));
 
@@ -62,7 +62,7 @@ public class RestUtil {
 		response.then().log().all() // optional: built-in logging before validation
 				.statusCode(statusCode).time(lessThan(responseTime));
 
-		logger.info("========== POST REQUEST COMPLETED ==========\n");
+		logger.info("########### POST REQUEST COMPLETED ###########\n");
 		return response;
 	}
 
@@ -72,7 +72,7 @@ public class RestUtil {
 	public static Response postRequest(String baseuri, String basepath, HashMap<String, Object> headers,
 			Object postReqBody, int statusCode, long responseTime, String jsonSchema) {
 
-		logger.debug("========== POST REQUEST WITH SCHEMA VALIDATION STARTED ==========");
+		logger.debug("########### POST REQUEST WITH SCHEMA VALIDATION STARTED###########");
 		logger.debug("Base URI: {}", baseuri);
 		logger.debug("Base Path: {}", basepath);
 		logger.debug("Request Body (JSON):\n{}", serializeToJson(postReqBody));
@@ -92,7 +92,7 @@ public class RestUtil {
 			logger.error("ERROR capturing response body: ", e);
 			logger.error("Exception message: {}", e.getMessage());
 		}
-		logger.info("========== POST REQUEST WITH SCHEMA VALIDATION COMPLETED ==========\n");
+		logger.info("########### POST REQUEST WITH SCHEMA VALIDATION COMPLETED ###########\n");
 
 		return response;
 	}
@@ -103,7 +103,7 @@ public class RestUtil {
 	public static Response postRequest(String baseuri, String basepath, HashMap<String, Object> headers,
 			HashMap<String, Object> postReqBody, int statusCode, long responseTime, String jsonSchema) {
 
-		logger.debug("========== POST REQUEST (HASHMAP) WITH SCHEMA VALIDATION STARTED ==========");
+		logger.debug("########### POST REQUEST (HASHMAP) WITH SCHEMA VALIDATION STARTED ###########");
 		logger.debug("Base URI: {}", baseuri);
 		logger.debug("Base Path: {}", basepath);
 		logger.debug("Request Body (JSON):\n{}", serializeToJson(postReqBody));
@@ -121,7 +121,7 @@ public class RestUtil {
 			logger.error("ERROR capturing response body: ", e);
 			logger.error("Exception message: {}", e.getMessage());
 		}
-		logger.info("========== POST REQUEST (HASHMAP) WITH SCHEMA VALIDATION COMPLETED ==========\n");
+		logger.info("########### POST REQUEST (HASHMAP) WITH SCHEMA VALIDATION COMPLETED ###########\n");
 
 		return response;
 	}
@@ -129,15 +129,29 @@ public class RestUtil {
 	/**
 	 * GET Request
 	 */
-	public static Response getRequest(String baseuri, String basepath, HashMap<String, Object> headers, int statusCode,
+	public static Response getRequest(String baseuri, String basepath, HashMap<String, Object> headers, HashMap<String, Object>  pathParameters,int statusCode,
 			long responseTime) {
 
-		logger.debug("========== GET REQUEST STARTED ==========");
+		logger.debug("########### GET REQUEST STARTED ###########");
 		logger.debug("Base URI: {}", baseuri);
 		logger.debug("Base Path: {}", basepath);
-
-		Response response = RestAssured.given().log().all().baseUri(baseuri).contentType(ContentType.JSON)
-				.headers(headers).when().get(basepath).then().log().all().statusCode(statusCode)
+		
+		if (pathParameters != null && !pathParameters.isEmpty()) {
+			logger.debug("Path Parameters: {}", pathParameters);
+		}
+ 
+		var givenRequest = RestAssured.given().log().all().baseUri(baseuri).contentType(ContentType.JSON);
+		 
+		if (headers != null && !headers.isEmpty()) {
+			givenRequest.headers(headers);
+		}
+ 
+		if (pathParameters != null && !pathParameters.isEmpty()) {
+			givenRequest.pathParams(pathParameters);
+		}
+ 
+		
+		Response response = givenRequest.when().get(basepath).then().log().all().statusCode(statusCode)
 				.time(lessThan(responseTime)).extract().response();
 
 		try {
@@ -149,7 +163,51 @@ public class RestUtil {
 			logger.error("ERROR capturing response body: ", e);
 			logger.error("Exception message: {}", e.getMessage());
 		}
-		logger.info("========== GET REQUEST COMPLETED ==========\n");
+		logger.info("########### GET REQUEST COMPLETED ###########\n");
+
+		return response;
+	}
+	
+	/**
+	 * PUT Request
+	 */
+	public static Response putRequest(String baseuri, String basepath, HashMap<String, ?> headers,HashMap<String, ?>  pathParameters,
+			Object putReqBody, int statusCode, long responseTime) {
+
+		logger.debug("########### PUT REQUEST STARTED ###########");
+		logger.debug("Base URI: {}", baseuri);
+		logger.debug("Base Path: {}", basepath);
+		logger.debug("Request Body (JSON):\n{}", serializeToJson(putReqBody));
+		
+		if (pathParameters != null && !pathParameters.isEmpty()) {
+			logger.debug("Path Parameters: {}", pathParameters);
+		}
+ 
+		//Pre-condition
+		var givenRequest = RestAssured.given().log().all().baseUri(baseuri).contentType(ContentType.JSON).body(putReqBody);
+	
+		if (headers != null && !headers.isEmpty()) {
+			givenRequest.headers(headers);
+		}
+ 
+		if (pathParameters != null && !pathParameters.isEmpty()) {
+			givenRequest.pathParams(pathParameters);
+		}
+
+		//post-conditon
+		Response response = givenRequest.when().put(basepath).then().log().all().statusCode(statusCode)
+				.time(lessThan(responseTime)).extract().response();
+
+		try {
+			String responseBody = response.getBody().asString();
+			logger.info("Response Status Code: {}", response.getStatusCode());
+			logger.info("Response Body Length: {}", responseBody.length());
+			logger.info("Response Body (JSON):\n{}", responseBody);
+		} catch (Exception e) {
+			logger.error("ERROR capturing response body: ", e);
+			logger.error("Exception message: {}", e.getMessage());
+		}
+		logger.info("########### PUT REQUEST COMPLETED ###########\n");
 
 		return response;
 	}
@@ -157,16 +215,29 @@ public class RestUtil {
 	/**
 	 * PATCH Request
 	 */
-	public static Response patchRequest(String baseuri, String basepath, HashMap<String, Object> headers,
+	public static Response patchRequest(String baseuri, String basepath, HashMap<String, Object> headers,HashMap<String, ?>  pathParameters,
 			Object patchReqBody, int statusCode, long responseTime) {
 
-		logger.debug("========== PATCH REQUEST STARTED ==========");
+		logger.debug("########### PATCH REQUEST STARTED ###########");
 		logger.debug("Base URI: {}", baseuri);
 		logger.debug("Base Path: {}", basepath);
 		logger.debug("Request Body (JSON):\n{}", serializeToJson(patchReqBody));
-
-		Response response = RestAssured.given().log().all().baseUri(baseuri).contentType(ContentType.JSON)
-				.headers(headers).body(patchReqBody).when().patch(basepath).then().log().all().statusCode(statusCode)
+		
+		if (pathParameters != null && !pathParameters.isEmpty()) {
+			logger.debug("Path Parameters: {}", pathParameters);
+		}
+ 
+		var givenRequest = RestAssured.given().log().all().baseUri(baseuri).contentType(ContentType.JSON).body(patchReqBody);
+	
+		if (headers != null && !headers.isEmpty()) {
+			givenRequest.headers(headers);
+		}
+ 
+		if (pathParameters != null && !pathParameters.isEmpty()) {
+			givenRequest.pathParams(pathParameters);
+		}
+		
+		Response response = givenRequest.when().patch(basepath).then().log().all().statusCode(statusCode)
 				.time(lessThan(responseTime)).extract().response();
 
 		try {
@@ -178,53 +249,38 @@ public class RestUtil {
 			logger.error("ERROR capturing response body: ", e);
 			logger.error("Exception message: {}", e.getMessage());
 		}
-		logger.info("========== PATCH REQUEST COMPLETED ==========\n");
+		logger.info("########### PATCH REQUEST COMPLETED ###########\n");
 
 		return response;
 	}
 
-	/**
-	 * PUT Request
-	 */
-	public static Response putRequest(String baseuri, String basepath, HashMap<String, Object> headers,
-			Object putReqBody, int statusCode, long responseTime) {
-
-		logger.debug("========== PUT REQUEST STARTED ==========");
-		logger.debug("Base URI: {}", baseuri);
-		logger.debug("Base Path: {}", basepath);
-		logger.debug("Request Body (JSON):\n{}", serializeToJson(putReqBody));
-
-		Response response = RestAssured.given().log().all().baseUri(baseuri).contentType(ContentType.JSON)
-				.headers(headers).body(putReqBody).when().put(basepath).then().log().all().statusCode(statusCode)
-				.time(lessThan(responseTime)).extract().response();
-
-		try {
-			String responseBody = response.getBody().asString();
-			logger.info("Response Status Code: {}", response.getStatusCode());
-			logger.info("Response Body Length: {}", responseBody.length());
-			logger.info("Response Body (JSON):\n{}", responseBody);
-		} catch (Exception e) {
-			logger.error("ERROR capturing response body: ", e);
-			logger.error("Exception message: {}", e.getMessage());
-		}
-		logger.info("========== PUT REQUEST COMPLETED ==========\n");
-
-		return response;
-	}
 
 	/**
 	 * DELETE Request
 	 */
-	public static Response deleteRequest(String baseuri, String basepath, HashMap<String, Object> headers,
-			Object deleteReqBody, int statusCode, long responseTime) {
+	public static Response deleteRequest(String baseuri, String basepath, HashMap<String, Object> headers,HashMap<String, ?>  pathParameters,
+		 int statusCode, long responseTime) {
 
-		logger.debug("========== DELETE REQUEST STARTED ==========");
+		logger.debug("########### DELETE REQUEST STARTED ###########");
 		logger.debug("Base URI: {}", baseuri);
 		logger.debug("Base Path: {}", basepath);
-		logger.debug("Request Body (JSON):\n{}", serializeToJson(deleteReqBody));
+		// logger.debug("Request Body (JSON):\n{}", serializeToJson(deleteReqBody));
 
-		Response response = RestAssured.given().log().all().baseUri(baseuri).contentType(ContentType.JSON)
-				.headers(headers).body(deleteReqBody).when().delete(basepath).then().log().all().statusCode(statusCode)
+		if (pathParameters != null && !pathParameters.isEmpty()) {
+			logger.debug("Path Parameters: {}", pathParameters);
+		}
+ 
+		var givenRequest = RestAssured.given().log().all().baseUri(baseuri).contentType(ContentType.JSON);
+	
+		if (headers != null && !headers.isEmpty()) {
+			givenRequest.headers(headers);
+		}
+ 
+		if (pathParameters != null && !pathParameters.isEmpty()) {
+			givenRequest.pathParams(pathParameters);
+		}
+		
+		Response response = givenRequest.when().delete(basepath).then().log().all().statusCode(statusCode)
 				.time(lessThan(responseTime)).extract().response();
 
 		try {
@@ -236,7 +292,7 @@ public class RestUtil {
 			logger.error("ERROR capturing response body: ", e);
 			logger.error("Exception message: {}", e.getMessage());
 		}
-		logger.info("========== DELETE REQUEST COMPLETED ==========\n");
+		logger.info("########### DELETE REQUEST COMPLETED ###########\n");
 
 		return response;
 	}

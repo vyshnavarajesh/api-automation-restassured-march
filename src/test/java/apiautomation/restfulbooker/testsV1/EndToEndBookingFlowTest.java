@@ -160,11 +160,7 @@ public class EndToEndBookingFlowTest {
 					.then().log().body()
 					.statusCode(200)
 					.time(lessThan(50000L)) ;// responsetime - lessThan is coming from hamcrest dependency
-				
 		
 	}
 	
-	
-	
-
 }

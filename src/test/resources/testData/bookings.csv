@@ -1,0 +1,6 @@
+firstName,lastName,totalPrice,depositPaid,checkIn,checkOut,additionalNeeds
+John,Doe,5000,true,2026-07-05,2026-07-10,Breakfast
+Jane,Smith,7500,false,2026-07-08,2026-07-15,Parking
+Mike,Johnson,3000,true,2026-07-01,2026-07-05,WiFi
+Sarah,Williams,10000,true,2026-07-12,2026-07-20,Breakfast and Parking
+David,Brown,4500,false,2026-07-03,2026-07-08,Late checkout

@@ -1,80 +1,2366 @@
-2026-06-27 17:06:25 [main] DEBUG TestNG - suiteXmlPath: "/Users/hareeshvyshnava/eclipse-workspace/apiautomation/testng-suites/testng.xml"
-2026-06-27 17:06:25 [main] WARN  Configuration - Detected a static method [apiautomation.restfulbooker.testsWithRestUtil.CreateBookingAPI_POST_WithRestUtility.beforeClass()]. Static configuration methods can cause unexpected behavior.
-2026-06-27 17:06:25 [main] INFO  Utils - [TestNG] Running:
-  /Users/hareeshvyshnava/eclipse-workspace/apiautomation/testng-suites/testng.xml
-
-2026-06-27 17:06:37 [main] INFO  CreateBookingAPI_POST_WithRestUtility - Tests Started
-2026-06-27 17:06:37 [main] DEBUG RestUtil - ========== POST REQUEST STARTED ==========
-2026-06-27 17:06:37 [main] DEBUG RestUtil - Base URI: https://restful-booker.herokuapp.com
-2026-06-27 17:06:37 [main] DEBUG RestUtil - Base Path: /booking
-2026-06-27 17:06:37 [main] DEBUG RestUtil - Request Headers: {Content-Type=application/json}
-2026-06-27 17:06:37 [main] DEBUG RestUtil - Request Body (JSON):
+2026-06-29 08:09:55 [main] INFO  EndToEndTests_WithRestUtility - Tests Started
+2026-06-29 08:09:55 [main] INFO  EndToEndTests_WithRestUtility - Tests Started
+2026-06-29 08:09:58 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:09:58 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:09:58 [main] INFO  RestUtil - Response Time: 1133 ms
+2026-06-29 08:09:58 [main] INFO  RestUtil - Response Time: 1133 ms
+2026-06-29 08:09:58 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:09:58 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:09:58 [main] INFO  RestUtil - Response Body Length: 202
+2026-06-29 08:09:58 [main] INFO  RestUtil - Response Body Length: 202
+2026-06-29 08:09:58 [main] INFO  RestUtil - Response Body (JSON):
 {
-  "firstname" : "Mickie",
-  "lastname" : "Franecki",
-  "totalprice" : 11904,
-  "depositpaid" : true,
-  "bookingdates" : {
-    "checkin" : "2026-06-29",
-    "checkout" : "2026-07-02"
-  },
-  "additionalneeds" : "Books"
-}
-2026-06-27 17:06:37 [main] DEBUG RestUtil - Expected Status Code: 201
-2026-06-27 17:06:37 [main] DEBUG RestUtil - Expected Response Time: 6000 ms
-2026-06-27 17:06:39 [main] INFO  RestUtil - ========== RESPONSE RECEIVED ==========
-2026-06-27 17:06:39 [main] INFO  RestUtil - Response Status Code: 200
-2026-06-27 17:06:39 [main] INFO  RestUtil - Response Time: 1548 ms
-2026-06-27 17:06:39 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
-2026-06-27 17:06:39 [main] INFO  RestUtil - Response Body Length: 201
-2026-06-27 17:06:39 [main] INFO  RestUtil - Response Body (JSON):
-{
-  "bookingid" : 3133,
+  "bookingid" : 4868,
   "booking" : {
-    "firstname" : "Mickie",
-    "lastname" : "Franecki",
-    "totalprice" : 11904,
-    "depositpaid" : true,
-    "bookingdates" : {
-      "checkin" : "2026-06-29",
-      "checkout" : "2026-07-02"
-    },
-    "additionalneeds" : "Books"
-  }
-}
-2026-06-27 23:11:00 [main] DEBUG TestNG - suiteXmlPath: "/Users/hareeshvyshnava/eclipse-workspace/apiautomation/testng-suites/testng.xml"
-2026-06-27 23:11:00 [main] WARN  Configuration - Detected a static method [apiautomation.restfulbooker.testsWithRestUtil.CreateBookingAPI_POST_WithRestUtility.beforeClass()]. Static configuration methods can cause unexpected behavior.
-2026-06-27 23:11:13 [main] INFO  CreateBookingAPI_POST_WithRestUtility - Tests Started
-2026-06-27 23:11:13 [main] DEBUG RestUtil - ========== POST REQUEST STARTED ==========
-2026-06-27 23:11:13 [main] DEBUG RestUtil - Request Headers: {Content-Type=application/json}
-2026-06-27 23:11:13 [main] DEBUG RestUtil - Request Body (JSON):
-{
-  "firstname" : "Winston",
-  "lastname" : "Willms",
-  "totalprice" : 67293,
-  "depositpaid" : true,
-  "bookingdates" : {
-    "checkin" : "2026-06-30",
-    "checkout" : "2026-07-13"
-  },
-  "additionalneeds" : "TV"
-}
-2026-06-27 23:11:15 [main] INFO  RestUtil - Response Status Code: 200
-2026-06-27 23:11:15 [main] INFO  RestUtil - Response Time: 1355 ms
-2026-06-27 23:11:15 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
-2026-06-27 23:11:15 [main] INFO  RestUtil - Response Body Length: 196
-2026-06-27 23:11:15 [main] INFO  RestUtil - Response Body (JSON):
-{
-  "bookingid" : 312,
-  "booking" : {
-    "firstname" : "Winston",
-    "lastname" : "Willms",
-    "totalprice" : 67293,
+    "firstname" : "Freeman",
+    "lastname" : "Hagenes",
+    "totalprice" : 60243,
     "depositpaid" : true,
     "bookingdates" : {
       "checkin" : "2026-06-30",
-      "checkout" : "2026-07-13"
+      "checkout" : "2026-07-09"
+    },
+    "additionalneeds" : "Fridge"
+  }
+}
+2026-06-29 08:09:58 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 4868,
+  "booking" : {
+    "firstname" : "Freeman",
+    "lastname" : "Hagenes",
+    "totalprice" : 60243,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-06-30",
+      "checkout" : "2026-07-09"
+    },
+    "additionalneeds" : "Fridge"
+  }
+}
+2026-06-29 08:09:58 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:09:58 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:09:58 [main] INFO  EndToEndTests_WithRestUtility - Tests Completed
+2026-06-29 08:09:58 [main] INFO  EndToEndTests_WithRestUtility - Tests Completed
+2026-06-29 08:09:59 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:09:59 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:09:59 [main] INFO  RestUtil - Response Body Length: 173
+2026-06-29 08:09:59 [main] INFO  RestUtil - Response Body Length: 173
+2026-06-29 08:09:59 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Freeman","lastname":"Hagenes","totalprice":60243,"depositpaid":true,"bookingdates":{"checkin":"2026-06-30","checkout":"2026-07-09"},"additionalneeds":"Fridge"}
+2026-06-29 08:09:59 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Freeman","lastname":"Hagenes","totalprice":60243,"depositpaid":true,"bookingdates":{"checkin":"2026-06-30","checkout":"2026-07-09"},"additionalneeds":"Fridge"}
+2026-06-29 08:09:59 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:09:59 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:10:00 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:10:00 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:10:00 [main] INFO  RestUtil - Response Body Length: 208
+2026-06-29 08:10:00 [main] INFO  RestUtil - Response Body Length: 208
+2026-06-29 08:10:01 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Test firstname one update","lastname":"Test lastname one update","totalprice":60243,"depositpaid":true,"bookingdates":{"checkin":"2026-06-30","checkout":"2026-07-09"},"additionalneeds":"Fridge"}
+2026-06-29 08:10:01 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Test firstname one update","lastname":"Test lastname one update","totalprice":60243,"depositpaid":true,"bookingdates":{"checkin":"2026-06-30","checkout":"2026-07-09"},"additionalneeds":"Fridge"}
+2026-06-29 08:10:01 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:10:01 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:10:02 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:10:02 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:10:02 [main] INFO  RestUtil - Response Body Length: 199
+2026-06-29 08:10:02 [main] INFO  RestUtil - Response Body Length: 199
+2026-06-29 08:10:02 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Test firstname update","lastname":"Test lastname update","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-06-30","checkout":"2026-07-09"},"additionalneeds":"Fridge"}
+2026-06-29 08:10:02 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Test firstname update","lastname":"Test lastname update","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-06-30","checkout":"2026-07-09"},"additionalneeds":"Fridge"}
+2026-06-29 08:10:02 [main] INFO  RestUtil - ########### PATCH REQUEST COMPLETED ###########
+
+2026-06-29 08:10:02 [main] INFO  RestUtil - ########### PATCH REQUEST COMPLETED ###########
+
+2026-06-29 08:10:03 [main] INFO  RestUtil - Response Status Code: 201
+2026-06-29 08:10:03 [main] INFO  RestUtil - Response Status Code: 201
+2026-06-29 08:10:03 [main] INFO  RestUtil - Response Body Length: 7
+2026-06-29 08:10:03 [main] INFO  RestUtil - Response Body Length: 7
+2026-06-29 08:10:03 [main] INFO  RestUtil - Response Body (JSON):
+Created
+2026-06-29 08:10:03 [main] INFO  RestUtil - Response Body (JSON):
+Created
+2026-06-29 08:10:03 [main] INFO  RestUtil - ########### DELETE REQUEST COMPLETED ###########
+
+2026-06-29 08:10:03 [main] INFO  RestUtil - ########### DELETE REQUEST COMPLETED ###########
+
+2026-06-29 08:15:12 [main] INFO  CSVDataProvider - Total CSV data rows: 5
+2026-06-29 08:15:12 [main] INFO  CSVDataProvider - Total CSV data rows: 5
+2026-06-29 08:15:12 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:15:12 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:15:12 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=John, lastName=Doe
+2026-06-29 08:15:12 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=John, lastName=Doe
+2026-06-29 08:15:18 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:18 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:18 [main] INFO  RestUtil - Response Time: 3776 ms
+2026-06-29 08:15:18 [main] INFO  RestUtil - Response Time: 3776 ms
+2026-06-29 08:15:18 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:18 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:18 [main] INFO  RestUtil - Response Body Length: 197
+2026-06-29 08:15:18 [main] INFO  RestUtil - Response Body Length: 197
+2026-06-29 08:15:18 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2548,
+  "booking" : {
+    "firstname" : "John",
+    "lastname" : "Doe",
+    "totalprice" : 5000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-05",
+      "checkout" : "2026-07-10"
+    },
+    "additionalneeds" : "Breakfast"
+  }
+}
+2026-06-29 08:15:18 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2548,
+  "booking" : {
+    "firstname" : "John",
+    "lastname" : "Doe",
+    "totalprice" : 5000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-05",
+      "checkout" : "2026-07-10"
+    },
+    "additionalneeds" : "Breakfast"
+  }
+}
+2026-06-29 08:15:19 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:19 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:20 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2548
+2026-06-29 08:15:20 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2548
+2026-06-29 08:15:21 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: John Doe
+2026-06-29 08:15:21 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: John Doe
+2026-06-29 08:15:21 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:21 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:21 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:15:21 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:15:21 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Jane, lastName=Smith
+2026-06-29 08:15:21 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Jane, lastName=Smith
+2026-06-29 08:15:22 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:22 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:22 [main] INFO  RestUtil - Response Time: 1145 ms
+2026-06-29 08:15:22 [main] INFO  RestUtil - Response Time: 1145 ms
+2026-06-29 08:15:22 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:22 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:22 [main] INFO  RestUtil - Response Body Length: 198
+2026-06-29 08:15:22 [main] INFO  RestUtil - Response Body Length: 198
+2026-06-29 08:15:22 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2583,
+  "booking" : {
+    "firstname" : "Jane",
+    "lastname" : "Smith",
+    "totalprice" : 7500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-08",
+      "checkout" : "2026-07-15"
+    },
+    "additionalneeds" : "Parking"
+  }
+}
+2026-06-29 08:15:22 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2583,
+  "booking" : {
+    "firstname" : "Jane",
+    "lastname" : "Smith",
+    "totalprice" : 7500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-08",
+      "checkout" : "2026-07-15"
+    },
+    "additionalneeds" : "Parking"
+  }
+}
+2026-06-29 08:15:22 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:22 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:22 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2583
+2026-06-29 08:15:22 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2583
+2026-06-29 08:15:22 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Jane Smith
+2026-06-29 08:15:22 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Jane Smith
+2026-06-29 08:15:22 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:22 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:22 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:15:22 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:15:22 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Mike, lastName=Johnson
+2026-06-29 08:15:22 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Mike, lastName=Johnson
+2026-06-29 08:15:24 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:24 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:24 [main] INFO  RestUtil - Response Time: 1136 ms
+2026-06-29 08:15:24 [main] INFO  RestUtil - Response Time: 1136 ms
+2026-06-29 08:15:24 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:24 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:24 [main] INFO  RestUtil - Response Body Length: 196
+2026-06-29 08:15:24 [main] INFO  RestUtil - Response Body Length: 196
+2026-06-29 08:15:24 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2600,
+  "booking" : {
+    "firstname" : "Mike",
+    "lastname" : "Johnson",
+    "totalprice" : 3000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-01",
+      "checkout" : "2026-07-05"
+    },
+    "additionalneeds" : "WiFi"
+  }
+}
+2026-06-29 08:15:24 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2600,
+  "booking" : {
+    "firstname" : "Mike",
+    "lastname" : "Johnson",
+    "totalprice" : 3000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-01",
+      "checkout" : "2026-07-05"
+    },
+    "additionalneeds" : "WiFi"
+  }
+}
+2026-06-29 08:15:24 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:24 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:24 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2600
+2026-06-29 08:15:24 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2600
+2026-06-29 08:15:24 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Mike Johnson
+2026-06-29 08:15:24 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Mike Johnson
+2026-06-29 08:15:24 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:24 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:24 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:15:24 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:15:24 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Sarah, lastName=Williams
+2026-06-29 08:15:24 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Sarah, lastName=Williams
+2026-06-29 08:15:25 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:25 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:25 [main] INFO  RestUtil - Response Time: 1113 ms
+2026-06-29 08:15:25 [main] INFO  RestUtil - Response Time: 1113 ms
+2026-06-29 08:15:25 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:25 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:25 [main] INFO  RestUtil - Response Body Length: 216
+2026-06-29 08:15:25 [main] INFO  RestUtil - Response Body Length: 216
+2026-06-29 08:15:25 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2616,
+  "booking" : {
+    "firstname" : "Sarah",
+    "lastname" : "Williams",
+    "totalprice" : 10000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-12",
+      "checkout" : "2026-07-20"
+    },
+    "additionalneeds" : "Breakfast and Parking"
+  }
+}
+2026-06-29 08:15:25 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2616,
+  "booking" : {
+    "firstname" : "Sarah",
+    "lastname" : "Williams",
+    "totalprice" : 10000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-12",
+      "checkout" : "2026-07-20"
+    },
+    "additionalneeds" : "Breakfast and Parking"
+  }
+}
+2026-06-29 08:15:25 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:25 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:25 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2616
+2026-06-29 08:15:25 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2616
+2026-06-29 08:15:25 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Sarah Williams
+2026-06-29 08:15:25 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Sarah Williams
+2026-06-29 08:15:25 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:25 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:25 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:15:25 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:15:25 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=David, lastName=Brown
+2026-06-29 08:15:25 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=David, lastName=Brown
+2026-06-29 08:15:27 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:27 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:27 [main] INFO  RestUtil - Response Time: 1126 ms
+2026-06-29 08:15:27 [main] INFO  RestUtil - Response Time: 1126 ms
+2026-06-29 08:15:27 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:27 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:27 [main] INFO  RestUtil - Response Body Length: 205
+2026-06-29 08:15:27 [main] INFO  RestUtil - Response Body Length: 205
+2026-06-29 08:15:27 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2631,
+  "booking" : {
+    "firstname" : "David",
+    "lastname" : "Brown",
+    "totalprice" : 4500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-03",
+      "checkout" : "2026-07-08"
+    },
+    "additionalneeds" : "Late checkout"
+  }
+}
+2026-06-29 08:15:27 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2631,
+  "booking" : {
+    "firstname" : "David",
+    "lastname" : "Brown",
+    "totalprice" : 4500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-03",
+      "checkout" : "2026-07-08"
+    },
+    "additionalneeds" : "Late checkout"
+  }
+}
+2026-06-29 08:15:27 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:27 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:27 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2631
+2026-06-29 08:15:27 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2631
+2026-06-29 08:15:27 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: David Brown
+2026-06-29 08:15:27 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: David Brown
+2026-06-29 08:15:27 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:27 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:27 [main] INFO  CSVDataProvider - Total CSV data rows: 5
+2026-06-29 08:15:27 [main] INFO  CSVDataProvider - Total CSV data rows: 5
+2026-06-29 08:15:27 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:15:27 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:15:27 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: John
+2026-06-29 08:15:27 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: John
+2026-06-29 08:15:28 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:15:28 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:15:29 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:29 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:29 [main] INFO  RestUtil - Response Time: 1110 ms
+2026-06-29 08:15:29 [main] INFO  RestUtil - Response Time: 1110 ms
+2026-06-29 08:15:29 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:29 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:30 [main] INFO  RestUtil - Response Body Length: 197
+2026-06-29 08:15:30 [main] INFO  RestUtil - Response Body Length: 197
+2026-06-29 08:15:30 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2654,
+  "booking" : {
+    "firstname" : "John",
+    "lastname" : "Doe",
+    "totalprice" : 5000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-05",
+      "checkout" : "2026-07-10"
+    },
+    "additionalneeds" : "Breakfast"
+  }
+}
+2026-06-29 08:15:30 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2654,
+  "booking" : {
+    "firstname" : "John",
+    "lastname" : "Doe",
+    "totalprice" : 5000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-05",
+      "checkout" : "2026-07-10"
+    },
+    "additionalneeds" : "Breakfast"
+  }
+}
+2026-06-29 08:15:30 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:30 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:30 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2654
+2026-06-29 08:15:30 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2654
+2026-06-29 08:15:30 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: John_Updated
+2026-06-29 08:15:30 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: John_Updated
+2026-06-29 08:15:31 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:31 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:31 [main] INFO  RestUtil - Response Body Length: 176
+2026-06-29 08:15:31 [main] INFO  RestUtil - Response Body Length: 176
+2026-06-29 08:15:31 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"John_Updated","lastname":"Doe","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-05","checkout":"2026-07-10"},"additionalneeds":"Breakfast"}
+2026-06-29 08:15:31 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"John_Updated","lastname":"Doe","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-05","checkout":"2026-07-10"},"additionalneeds":"Breakfast"}
+2026-06-29 08:15:31 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:15:31 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:15:32 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:32 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:32 [main] INFO  RestUtil - Response Body Length: 176
+2026-06-29 08:15:32 [main] INFO  RestUtil - Response Body Length: 176
+2026-06-29 08:15:32 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"John_Updated","lastname":"Doe","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-05","checkout":"2026-07-10"},"additionalneeds":"Breakfast"}
+2026-06-29 08:15:32 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"John_Updated","lastname":"Doe","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-05","checkout":"2026-07-10"},"additionalneeds":"Breakfast"}
+2026-06-29 08:15:32 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:15:32 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:15:32 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:32 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:32 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:15:32 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:15:32 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Jane
+2026-06-29 08:15:32 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Jane
+2026-06-29 08:15:33 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:15:33 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:15:34 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:34 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:34 [main] INFO  RestUtil - Response Time: 1122 ms
+2026-06-29 08:15:34 [main] INFO  RestUtil - Response Time: 1122 ms
+2026-06-29 08:15:34 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:34 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:34 [main] INFO  RestUtil - Response Body Length: 198
+2026-06-29 08:15:34 [main] INFO  RestUtil - Response Body Length: 198
+2026-06-29 08:15:34 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2695,
+  "booking" : {
+    "firstname" : "Jane",
+    "lastname" : "Smith",
+    "totalprice" : 7500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-08",
+      "checkout" : "2026-07-15"
+    },
+    "additionalneeds" : "Parking"
+  }
+}
+2026-06-29 08:15:34 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2695,
+  "booking" : {
+    "firstname" : "Jane",
+    "lastname" : "Smith",
+    "totalprice" : 7500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-08",
+      "checkout" : "2026-07-15"
+    },
+    "additionalneeds" : "Parking"
+  }
+}
+2026-06-29 08:15:34 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:34 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:35 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2695
+2026-06-29 08:15:35 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2695
+2026-06-29 08:15:35 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Jane_Updated
+2026-06-29 08:15:35 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Jane_Updated
+2026-06-29 08:15:36 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:36 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:36 [main] INFO  RestUtil - Response Body Length: 177
+2026-06-29 08:15:36 [main] INFO  RestUtil - Response Body Length: 177
+2026-06-29 08:15:36 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Jane_Updated","lastname":"Smith","totalprice":7500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-08","checkout":"2026-07-15"},"additionalneeds":"Parking"}
+2026-06-29 08:15:36 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Jane_Updated","lastname":"Smith","totalprice":7500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-08","checkout":"2026-07-15"},"additionalneeds":"Parking"}
+2026-06-29 08:15:36 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:15:36 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:15:37 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:37 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:37 [main] INFO  RestUtil - Response Body Length: 177
+2026-06-29 08:15:37 [main] INFO  RestUtil - Response Body Length: 177
+2026-06-29 08:15:37 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Jane_Updated","lastname":"Smith","totalprice":7500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-08","checkout":"2026-07-15"},"additionalneeds":"Parking"}
+2026-06-29 08:15:37 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Jane_Updated","lastname":"Smith","totalprice":7500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-08","checkout":"2026-07-15"},"additionalneeds":"Parking"}
+2026-06-29 08:15:37 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:15:37 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:15:37 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:37 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:37 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:15:37 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:15:37 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Mike
+2026-06-29 08:15:37 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Mike
+2026-06-29 08:15:38 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:15:38 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:15:40 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:40 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:40 [main] INFO  RestUtil - Response Time: 1114 ms
+2026-06-29 08:15:40 [main] INFO  RestUtil - Response Time: 1114 ms
+2026-06-29 08:15:40 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:40 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:40 [main] INFO  RestUtil - Response Body Length: 196
+2026-06-29 08:15:40 [main] INFO  RestUtil - Response Body Length: 196
+2026-06-29 08:15:40 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2740,
+  "booking" : {
+    "firstname" : "Mike",
+    "lastname" : "Johnson",
+    "totalprice" : 3000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-01",
+      "checkout" : "2026-07-05"
+    },
+    "additionalneeds" : "WiFi"
+  }
+}
+2026-06-29 08:15:40 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2740,
+  "booking" : {
+    "firstname" : "Mike",
+    "lastname" : "Johnson",
+    "totalprice" : 3000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-01",
+      "checkout" : "2026-07-05"
+    },
+    "additionalneeds" : "WiFi"
+  }
+}
+2026-06-29 08:15:40 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:40 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:40 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2740
+2026-06-29 08:15:40 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2740
+2026-06-29 08:15:40 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Mike_Updated
+2026-06-29 08:15:40 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Mike_Updated
+2026-06-29 08:15:41 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:41 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:41 [main] INFO  RestUtil - Response Body Length: 175
+2026-06-29 08:15:41 [main] INFO  RestUtil - Response Body Length: 175
+2026-06-29 08:15:41 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Mike_Updated","lastname":"Johnson","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-05"},"additionalneeds":"WiFi"}
+2026-06-29 08:15:41 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Mike_Updated","lastname":"Johnson","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-05"},"additionalneeds":"WiFi"}
+2026-06-29 08:15:41 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:15:41 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:15:42 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:42 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:42 [main] INFO  RestUtil - Response Body Length: 175
+2026-06-29 08:15:42 [main] INFO  RestUtil - Response Body Length: 175
+2026-06-29 08:15:42 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Mike_Updated","lastname":"Johnson","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-05"},"additionalneeds":"WiFi"}
+2026-06-29 08:15:42 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Mike_Updated","lastname":"Johnson","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-05"},"additionalneeds":"WiFi"}
+2026-06-29 08:15:42 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:15:42 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:15:42 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:42 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:42 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:15:42 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:15:42 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Sarah
+2026-06-29 08:15:42 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Sarah
+2026-06-29 08:15:43 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:15:43 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:15:44 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:44 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:44 [main] INFO  RestUtil - Response Time: 1096 ms
+2026-06-29 08:15:44 [main] INFO  RestUtil - Response Time: 1096 ms
+2026-06-29 08:15:44 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:44 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:44 [main] INFO  RestUtil - Response Body Length: 216
+2026-06-29 08:15:44 [main] INFO  RestUtil - Response Body Length: 216
+2026-06-29 08:15:44 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2779,
+  "booking" : {
+    "firstname" : "Sarah",
+    "lastname" : "Williams",
+    "totalprice" : 10000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-12",
+      "checkout" : "2026-07-20"
+    },
+    "additionalneeds" : "Breakfast and Parking"
+  }
+}
+2026-06-29 08:15:44 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2779,
+  "booking" : {
+    "firstname" : "Sarah",
+    "lastname" : "Williams",
+    "totalprice" : 10000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-12",
+      "checkout" : "2026-07-20"
+    },
+    "additionalneeds" : "Breakfast and Parking"
+  }
+}
+2026-06-29 08:15:44 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:44 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:44 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2779
+2026-06-29 08:15:44 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2779
+2026-06-29 08:15:44 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Sarah_Updated
+2026-06-29 08:15:44 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Sarah_Updated
+2026-06-29 08:15:46 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:46 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:46 [main] INFO  RestUtil - Response Body Length: 195
+2026-06-29 08:15:46 [main] INFO  RestUtil - Response Body Length: 195
+2026-06-29 08:15:46 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Sarah_Updated","lastname":"Williams","totalprice":10000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-12","checkout":"2026-07-20"},"additionalneeds":"Breakfast and Parking"}
+2026-06-29 08:15:46 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Sarah_Updated","lastname":"Williams","totalprice":10000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-12","checkout":"2026-07-20"},"additionalneeds":"Breakfast and Parking"}
+2026-06-29 08:15:46 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:15:46 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:15:47 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:47 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:47 [main] INFO  RestUtil - Response Body Length: 195
+2026-06-29 08:15:47 [main] INFO  RestUtil - Response Body Length: 195
+2026-06-29 08:15:47 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Sarah_Updated","lastname":"Williams","totalprice":10000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-12","checkout":"2026-07-20"},"additionalneeds":"Breakfast and Parking"}
+2026-06-29 08:15:47 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Sarah_Updated","lastname":"Williams","totalprice":10000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-12","checkout":"2026-07-20"},"additionalneeds":"Breakfast and Parking"}
+2026-06-29 08:15:47 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:15:47 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:15:47 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:47 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:47 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:15:47 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:15:47 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: David
+2026-06-29 08:15:47 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: David
+2026-06-29 08:15:48 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:15:48 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:15:49 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:49 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:49 [main] INFO  RestUtil - Response Time: 1050 ms
+2026-06-29 08:15:49 [main] INFO  RestUtil - Response Time: 1050 ms
+2026-06-29 08:15:49 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:49 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:15:49 [main] INFO  RestUtil - Response Body Length: 205
+2026-06-29 08:15:49 [main] INFO  RestUtil - Response Body Length: 205
+2026-06-29 08:15:49 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2823,
+  "booking" : {
+    "firstname" : "David",
+    "lastname" : "Brown",
+    "totalprice" : 4500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-03",
+      "checkout" : "2026-07-08"
+    },
+    "additionalneeds" : "Late checkout"
+  }
+}
+2026-06-29 08:15:49 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 2823,
+  "booking" : {
+    "firstname" : "David",
+    "lastname" : "Brown",
+    "totalprice" : 4500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-03",
+      "checkout" : "2026-07-08"
+    },
+    "additionalneeds" : "Late checkout"
+  }
+}
+2026-06-29 08:15:49 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:49 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:15:49 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2823
+2026-06-29 08:15:49 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 2823
+2026-06-29 08:15:49 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: David_Updated
+2026-06-29 08:15:49 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: David_Updated
+2026-06-29 08:15:50 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:50 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:50 [main] INFO  RestUtil - Response Body Length: 184
+2026-06-29 08:15:50 [main] INFO  RestUtil - Response Body Length: 184
+2026-06-29 08:15:50 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"David_Updated","lastname":"Brown","totalprice":4500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-03","checkout":"2026-07-08"},"additionalneeds":"Late checkout"}
+2026-06-29 08:15:50 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"David_Updated","lastname":"Brown","totalprice":4500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-03","checkout":"2026-07-08"},"additionalneeds":"Late checkout"}
+2026-06-29 08:15:50 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:15:50 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:15:51 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:51 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:15:51 [main] INFO  RestUtil - Response Body Length: 184
+2026-06-29 08:15:51 [main] INFO  RestUtil - Response Body Length: 184
+2026-06-29 08:15:51 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"David_Updated","lastname":"Brown","totalprice":4500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-03","checkout":"2026-07-08"},"additionalneeds":"Late checkout"}
+2026-06-29 08:15:51 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"David_Updated","lastname":"Brown","totalprice":4500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-03","checkout":"2026-07-08"},"additionalneeds":"Late checkout"}
+2026-06-29 08:15:51 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:15:51 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:15:51 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:15:51 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:31 [main] INFO  EndToEndTests_WithRestUtility - Tests Started
+2026-06-29 08:17:31 [main] INFO  EndToEndTests_WithRestUtility - Tests Started
+2026-06-29 08:17:34 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:34 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:34 [main] INFO  RestUtil - Response Time: 1193 ms
+2026-06-29 08:17:34 [main] INFO  RestUtil - Response Time: 1193 ms
+2026-06-29 08:17:34 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:34 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:34 [main] INFO  RestUtil - Response Body Length: 200
+2026-06-29 08:17:34 [main] INFO  RestUtil - Response Body Length: 200
+2026-06-29 08:17:34 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3711,
+  "booking" : {
+    "firstname" : "Shiloh",
+    "lastname" : "Wintheiser",
+    "totalprice" : 96041,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-01",
+      "checkout" : "2026-07-18"
     },
     "additionalneeds" : "TV"
   }
 }
+2026-06-29 08:17:34 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3711,
+  "booking" : {
+    "firstname" : "Shiloh",
+    "lastname" : "Wintheiser",
+    "totalprice" : 96041,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-01",
+      "checkout" : "2026-07-18"
+    },
+    "additionalneeds" : "TV"
+  }
+}
+2026-06-29 08:17:34 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:34 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:34 [main] INFO  EndToEndTests_WithRestUtility - Tests Completed
+2026-06-29 08:17:34 [main] INFO  EndToEndTests_WithRestUtility - Tests Completed
+2026-06-29 08:17:35 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:35 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:35 [main] INFO  RestUtil - Response Body Length: 171
+2026-06-29 08:17:35 [main] INFO  RestUtil - Response Body Length: 171
+2026-06-29 08:17:35 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Shiloh","lastname":"Wintheiser","totalprice":96041,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-18"},"additionalneeds":"TV"}
+2026-06-29 08:17:35 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Shiloh","lastname":"Wintheiser","totalprice":96041,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-18"},"additionalneeds":"TV"}
+2026-06-29 08:17:35 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:17:35 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:17:36 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:36 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:36 [main] INFO  RestUtil - Response Body Length: 204
+2026-06-29 08:17:36 [main] INFO  RestUtil - Response Body Length: 204
+2026-06-29 08:17:36 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Test firstname one update","lastname":"Test lastname one update","totalprice":96041,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-18"},"additionalneeds":"TV"}
+2026-06-29 08:17:36 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Test firstname one update","lastname":"Test lastname one update","totalprice":96041,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-18"},"additionalneeds":"TV"}
+2026-06-29 08:17:36 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:17:36 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:17:38 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:38 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:38 [main] INFO  RestUtil - Response Body Length: 195
+2026-06-29 08:17:38 [main] INFO  RestUtil - Response Body Length: 195
+2026-06-29 08:17:38 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Test firstname update","lastname":"Test lastname update","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-18"},"additionalneeds":"TV"}
+2026-06-29 08:17:38 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Test firstname update","lastname":"Test lastname update","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-18"},"additionalneeds":"TV"}
+2026-06-29 08:17:38 [main] INFO  RestUtil - ########### PATCH REQUEST COMPLETED ###########
+
+2026-06-29 08:17:38 [main] INFO  RestUtil - ########### PATCH REQUEST COMPLETED ###########
+
+2026-06-29 08:17:39 [main] INFO  RestUtil - Response Status Code: 201
+2026-06-29 08:17:39 [main] INFO  RestUtil - Response Status Code: 201
+2026-06-29 08:17:39 [main] INFO  RestUtil - Response Body Length: 7
+2026-06-29 08:17:39 [main] INFO  RestUtil - Response Body Length: 7
+2026-06-29 08:17:39 [main] INFO  RestUtil - Response Body (JSON):
+Created
+2026-06-29 08:17:39 [main] INFO  RestUtil - Response Body (JSON):
+Created
+2026-06-29 08:17:39 [main] INFO  RestUtil - ########### DELETE REQUEST COMPLETED ###########
+
+2026-06-29 08:17:39 [main] INFO  RestUtil - ########### DELETE REQUEST COMPLETED ###########
+
+2026-06-29 08:17:39 [main] INFO  CSVDataProvider - Total CSV data rows: 5
+2026-06-29 08:17:39 [main] INFO  CSVDataProvider - Total CSV data rows: 5
+2026-06-29 08:17:39 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:17:39 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:17:39 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=John, lastName=Doe
+2026-06-29 08:17:39 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=John, lastName=Doe
+2026-06-29 08:17:40 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:40 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:40 [main] INFO  RestUtil - Response Time: 1095 ms
+2026-06-29 08:17:40 [main] INFO  RestUtil - Response Time: 1095 ms
+2026-06-29 08:17:40 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:40 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:40 [main] INFO  RestUtil - Response Body Length: 197
+2026-06-29 08:17:40 [main] INFO  RestUtil - Response Body Length: 197
+2026-06-29 08:17:40 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3768,
+  "booking" : {
+    "firstname" : "John",
+    "lastname" : "Doe",
+    "totalprice" : 5000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-05",
+      "checkout" : "2026-07-10"
+    },
+    "additionalneeds" : "Breakfast"
+  }
+}
+2026-06-29 08:17:40 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3768,
+  "booking" : {
+    "firstname" : "John",
+    "lastname" : "Doe",
+    "totalprice" : 5000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-05",
+      "checkout" : "2026-07-10"
+    },
+    "additionalneeds" : "Breakfast"
+  }
+}
+2026-06-29 08:17:40 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:40 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:40 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3768
+2026-06-29 08:17:40 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3768
+2026-06-29 08:17:40 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: John Doe
+2026-06-29 08:17:40 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: John Doe
+2026-06-29 08:17:40 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:40 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:40 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:17:40 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:17:40 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Jane, lastName=Smith
+2026-06-29 08:17:40 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Jane, lastName=Smith
+2026-06-29 08:17:41 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:41 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:41 [main] INFO  RestUtil - Response Time: 1067 ms
+2026-06-29 08:17:41 [main] INFO  RestUtil - Response Time: 1067 ms
+2026-06-29 08:17:41 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:41 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:41 [main] INFO  RestUtil - Response Body Length: 198
+2026-06-29 08:17:41 [main] INFO  RestUtil - Response Body Length: 198
+2026-06-29 08:17:41 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3775,
+  "booking" : {
+    "firstname" : "Jane",
+    "lastname" : "Smith",
+    "totalprice" : 7500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-08",
+      "checkout" : "2026-07-15"
+    },
+    "additionalneeds" : "Parking"
+  }
+}
+2026-06-29 08:17:41 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3775,
+  "booking" : {
+    "firstname" : "Jane",
+    "lastname" : "Smith",
+    "totalprice" : 7500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-08",
+      "checkout" : "2026-07-15"
+    },
+    "additionalneeds" : "Parking"
+  }
+}
+2026-06-29 08:17:41 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:41 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:41 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3775
+2026-06-29 08:17:41 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3775
+2026-06-29 08:17:41 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Jane Smith
+2026-06-29 08:17:41 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Jane Smith
+2026-06-29 08:17:41 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:41 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:41 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:17:41 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:17:41 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Mike, lastName=Johnson
+2026-06-29 08:17:41 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Mike, lastName=Johnson
+2026-06-29 08:17:42 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:42 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:42 [main] INFO  RestUtil - Response Time: 1072 ms
+2026-06-29 08:17:42 [main] INFO  RestUtil - Response Time: 1072 ms
+2026-06-29 08:17:42 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:42 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:42 [main] INFO  RestUtil - Response Body Length: 196
+2026-06-29 08:17:42 [main] INFO  RestUtil - Response Body Length: 196
+2026-06-29 08:17:42 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3784,
+  "booking" : {
+    "firstname" : "Mike",
+    "lastname" : "Johnson",
+    "totalprice" : 3000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-01",
+      "checkout" : "2026-07-05"
+    },
+    "additionalneeds" : "WiFi"
+  }
+}
+2026-06-29 08:17:42 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3784,
+  "booking" : {
+    "firstname" : "Mike",
+    "lastname" : "Johnson",
+    "totalprice" : 3000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-01",
+      "checkout" : "2026-07-05"
+    },
+    "additionalneeds" : "WiFi"
+  }
+}
+2026-06-29 08:17:42 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:42 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:43 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3784
+2026-06-29 08:17:43 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3784
+2026-06-29 08:17:43 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Mike Johnson
+2026-06-29 08:17:43 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Mike Johnson
+2026-06-29 08:17:43 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:43 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:43 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:17:43 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:17:43 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Sarah, lastName=Williams
+2026-06-29 08:17:43 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Sarah, lastName=Williams
+2026-06-29 08:17:44 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:44 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:44 [main] INFO  RestUtil - Response Time: 1072 ms
+2026-06-29 08:17:44 [main] INFO  RestUtil - Response Time: 1072 ms
+2026-06-29 08:17:44 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:44 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:44 [main] INFO  RestUtil - Response Body Length: 216
+2026-06-29 08:17:44 [main] INFO  RestUtil - Response Body Length: 216
+2026-06-29 08:17:44 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3799,
+  "booking" : {
+    "firstname" : "Sarah",
+    "lastname" : "Williams",
+    "totalprice" : 10000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-12",
+      "checkout" : "2026-07-20"
+    },
+    "additionalneeds" : "Breakfast and Parking"
+  }
+}
+2026-06-29 08:17:44 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3799,
+  "booking" : {
+    "firstname" : "Sarah",
+    "lastname" : "Williams",
+    "totalprice" : 10000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-12",
+      "checkout" : "2026-07-20"
+    },
+    "additionalneeds" : "Breakfast and Parking"
+  }
+}
+2026-06-29 08:17:44 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:44 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:44 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3799
+2026-06-29 08:17:44 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3799
+2026-06-29 08:17:44 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Sarah Williams
+2026-06-29 08:17:44 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Sarah Williams
+2026-06-29 08:17:44 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:44 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:44 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:17:44 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:17:44 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=David, lastName=Brown
+2026-06-29 08:17:44 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=David, lastName=Brown
+2026-06-29 08:17:45 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:45 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:45 [main] INFO  RestUtil - Response Time: 1071 ms
+2026-06-29 08:17:45 [main] INFO  RestUtil - Response Time: 1071 ms
+2026-06-29 08:17:45 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:45 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:45 [main] INFO  RestUtil - Response Body Length: 205
+2026-06-29 08:17:45 [main] INFO  RestUtil - Response Body Length: 205
+2026-06-29 08:17:45 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3811,
+  "booking" : {
+    "firstname" : "David",
+    "lastname" : "Brown",
+    "totalprice" : 4500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-03",
+      "checkout" : "2026-07-08"
+    },
+    "additionalneeds" : "Late checkout"
+  }
+}
+2026-06-29 08:17:45 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3811,
+  "booking" : {
+    "firstname" : "David",
+    "lastname" : "Brown",
+    "totalprice" : 4500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-03",
+      "checkout" : "2026-07-08"
+    },
+    "additionalneeds" : "Late checkout"
+  }
+}
+2026-06-29 08:17:45 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:45 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:45 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3811
+2026-06-29 08:17:45 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3811
+2026-06-29 08:17:45 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: David Brown
+2026-06-29 08:17:45 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: David Brown
+2026-06-29 08:17:45 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:45 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:45 [main] INFO  CSVDataProvider - Total CSV data rows: 5
+2026-06-29 08:17:45 [main] INFO  CSVDataProvider - Total CSV data rows: 5
+2026-06-29 08:17:45 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:17:45 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:17:45 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: John
+2026-06-29 08:17:45 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: John
+2026-06-29 08:17:46 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:17:46 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:17:47 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:47 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:47 [main] INFO  RestUtil - Response Time: 1058 ms
+2026-06-29 08:17:47 [main] INFO  RestUtil - Response Time: 1058 ms
+2026-06-29 08:17:47 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:47 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:47 [main] INFO  RestUtil - Response Body Length: 197
+2026-06-29 08:17:47 [main] INFO  RestUtil - Response Body Length: 197
+2026-06-29 08:17:47 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3834,
+  "booking" : {
+    "firstname" : "John",
+    "lastname" : "Doe",
+    "totalprice" : 5000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-05",
+      "checkout" : "2026-07-10"
+    },
+    "additionalneeds" : "Breakfast"
+  }
+}
+2026-06-29 08:17:47 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3834,
+  "booking" : {
+    "firstname" : "John",
+    "lastname" : "Doe",
+    "totalprice" : 5000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-05",
+      "checkout" : "2026-07-10"
+    },
+    "additionalneeds" : "Breakfast"
+  }
+}
+2026-06-29 08:17:47 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:47 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:47 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3834
+2026-06-29 08:17:47 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3834
+2026-06-29 08:17:47 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: John_Updated
+2026-06-29 08:17:47 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: John_Updated
+2026-06-29 08:17:48 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:48 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:48 [main] INFO  RestUtil - Response Body Length: 176
+2026-06-29 08:17:48 [main] INFO  RestUtil - Response Body Length: 176
+2026-06-29 08:17:48 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"John_Updated","lastname":"Doe","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-05","checkout":"2026-07-10"},"additionalneeds":"Breakfast"}
+2026-06-29 08:17:48 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"John_Updated","lastname":"Doe","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-05","checkout":"2026-07-10"},"additionalneeds":"Breakfast"}
+2026-06-29 08:17:48 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:17:48 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:17:50 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:50 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:50 [main] INFO  RestUtil - Response Body Length: 176
+2026-06-29 08:17:50 [main] INFO  RestUtil - Response Body Length: 176
+2026-06-29 08:17:50 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"John_Updated","lastname":"Doe","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-05","checkout":"2026-07-10"},"additionalneeds":"Breakfast"}
+2026-06-29 08:17:50 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"John_Updated","lastname":"Doe","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-05","checkout":"2026-07-10"},"additionalneeds":"Breakfast"}
+2026-06-29 08:17:50 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:17:50 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:17:50 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:50 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:50 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:17:50 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:17:50 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Jane
+2026-06-29 08:17:50 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Jane
+2026-06-29 08:17:51 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:17:51 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:17:52 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:52 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:52 [main] INFO  RestUtil - Response Time: 1072 ms
+2026-06-29 08:17:52 [main] INFO  RestUtil - Response Time: 1072 ms
+2026-06-29 08:17:52 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:52 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:52 [main] INFO  RestUtil - Response Body Length: 198
+2026-06-29 08:17:52 [main] INFO  RestUtil - Response Body Length: 198
+2026-06-29 08:17:52 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3867,
+  "booking" : {
+    "firstname" : "Jane",
+    "lastname" : "Smith",
+    "totalprice" : 7500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-08",
+      "checkout" : "2026-07-15"
+    },
+    "additionalneeds" : "Parking"
+  }
+}
+2026-06-29 08:17:52 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3867,
+  "booking" : {
+    "firstname" : "Jane",
+    "lastname" : "Smith",
+    "totalprice" : 7500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-08",
+      "checkout" : "2026-07-15"
+    },
+    "additionalneeds" : "Parking"
+  }
+}
+2026-06-29 08:17:52 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:52 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:52 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3867
+2026-06-29 08:17:52 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3867
+2026-06-29 08:17:52 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Jane_Updated
+2026-06-29 08:17:52 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Jane_Updated
+2026-06-29 08:17:53 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:53 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:53 [main] INFO  RestUtil - Response Body Length: 177
+2026-06-29 08:17:53 [main] INFO  RestUtil - Response Body Length: 177
+2026-06-29 08:17:53 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Jane_Updated","lastname":"Smith","totalprice":7500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-08","checkout":"2026-07-15"},"additionalneeds":"Parking"}
+2026-06-29 08:17:53 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Jane_Updated","lastname":"Smith","totalprice":7500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-08","checkout":"2026-07-15"},"additionalneeds":"Parking"}
+2026-06-29 08:17:53 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:17:53 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:17:54 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:54 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:54 [main] INFO  RestUtil - Response Body Length: 177
+2026-06-29 08:17:54 [main] INFO  RestUtil - Response Body Length: 177
+2026-06-29 08:17:54 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Jane_Updated","lastname":"Smith","totalprice":7500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-08","checkout":"2026-07-15"},"additionalneeds":"Parking"}
+2026-06-29 08:17:54 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Jane_Updated","lastname":"Smith","totalprice":7500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-08","checkout":"2026-07-15"},"additionalneeds":"Parking"}
+2026-06-29 08:17:54 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:17:54 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:17:54 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:54 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:54 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:17:54 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:17:54 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Mike
+2026-06-29 08:17:54 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Mike
+2026-06-29 08:17:55 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:17:55 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:17:56 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:56 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:56 [main] INFO  RestUtil - Response Time: 1076 ms
+2026-06-29 08:17:56 [main] INFO  RestUtil - Response Time: 1076 ms
+2026-06-29 08:17:56 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:56 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:17:56 [main] INFO  RestUtil - Response Body Length: 196
+2026-06-29 08:17:56 [main] INFO  RestUtil - Response Body Length: 196
+2026-06-29 08:17:56 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3910,
+  "booking" : {
+    "firstname" : "Mike",
+    "lastname" : "Johnson",
+    "totalprice" : 3000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-01",
+      "checkout" : "2026-07-05"
+    },
+    "additionalneeds" : "WiFi"
+  }
+}
+2026-06-29 08:17:56 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3910,
+  "booking" : {
+    "firstname" : "Mike",
+    "lastname" : "Johnson",
+    "totalprice" : 3000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-01",
+      "checkout" : "2026-07-05"
+    },
+    "additionalneeds" : "WiFi"
+  }
+}
+2026-06-29 08:17:56 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:56 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:17:56 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3910
+2026-06-29 08:17:56 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3910
+2026-06-29 08:17:56 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Mike_Updated
+2026-06-29 08:17:56 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Mike_Updated
+2026-06-29 08:17:57 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:57 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:57 [main] INFO  RestUtil - Response Body Length: 175
+2026-06-29 08:17:57 [main] INFO  RestUtil - Response Body Length: 175
+2026-06-29 08:17:57 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Mike_Updated","lastname":"Johnson","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-05"},"additionalneeds":"WiFi"}
+2026-06-29 08:17:57 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Mike_Updated","lastname":"Johnson","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-05"},"additionalneeds":"WiFi"}
+2026-06-29 08:17:57 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:17:57 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:17:59 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:59 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:17:59 [main] INFO  RestUtil - Response Body Length: 175
+2026-06-29 08:17:59 [main] INFO  RestUtil - Response Body Length: 175
+2026-06-29 08:17:59 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Mike_Updated","lastname":"Johnson","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-05"},"additionalneeds":"WiFi"}
+2026-06-29 08:17:59 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Mike_Updated","lastname":"Johnson","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-05"},"additionalneeds":"WiFi"}
+2026-06-29 08:17:59 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:17:59 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:17:59 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:59 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:17:59 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:17:59 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:17:59 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Sarah
+2026-06-29 08:17:59 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Sarah
+2026-06-29 08:18:00 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:18:00 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:18:01 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:18:01 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:18:01 [main] INFO  RestUtil - Response Time: 1102 ms
+2026-06-29 08:18:01 [main] INFO  RestUtil - Response Time: 1102 ms
+2026-06-29 08:18:01 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:18:01 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:18:01 [main] INFO  RestUtil - Response Body Length: 216
+2026-06-29 08:18:01 [main] INFO  RestUtil - Response Body Length: 216
+2026-06-29 08:18:01 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3949,
+  "booking" : {
+    "firstname" : "Sarah",
+    "lastname" : "Williams",
+    "totalprice" : 10000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-12",
+      "checkout" : "2026-07-20"
+    },
+    "additionalneeds" : "Breakfast and Parking"
+  }
+}
+2026-06-29 08:18:01 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3949,
+  "booking" : {
+    "firstname" : "Sarah",
+    "lastname" : "Williams",
+    "totalprice" : 10000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-12",
+      "checkout" : "2026-07-20"
+    },
+    "additionalneeds" : "Breakfast and Parking"
+  }
+}
+2026-06-29 08:18:01 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:18:01 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:18:01 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3949
+2026-06-29 08:18:01 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3949
+2026-06-29 08:18:01 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Sarah_Updated
+2026-06-29 08:18:01 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Sarah_Updated
+2026-06-29 08:18:02 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:18:02 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:18:02 [main] INFO  RestUtil - Response Body Length: 195
+2026-06-29 08:18:02 [main] INFO  RestUtil - Response Body Length: 195
+2026-06-29 08:18:02 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Sarah_Updated","lastname":"Williams","totalprice":10000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-12","checkout":"2026-07-20"},"additionalneeds":"Breakfast and Parking"}
+2026-06-29 08:18:02 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Sarah_Updated","lastname":"Williams","totalprice":10000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-12","checkout":"2026-07-20"},"additionalneeds":"Breakfast and Parking"}
+2026-06-29 08:18:02 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:18:02 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:18:03 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:18:03 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:18:03 [main] INFO  RestUtil - Response Body Length: 195
+2026-06-29 08:18:03 [main] INFO  RestUtil - Response Body Length: 195
+2026-06-29 08:18:03 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Sarah_Updated","lastname":"Williams","totalprice":10000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-12","checkout":"2026-07-20"},"additionalneeds":"Breakfast and Parking"}
+2026-06-29 08:18:03 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Sarah_Updated","lastname":"Williams","totalprice":10000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-12","checkout":"2026-07-20"},"additionalneeds":"Breakfast and Parking"}
+2026-06-29 08:18:03 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:18:03 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:18:03 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:18:03 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:18:03 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:18:03 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:18:03 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: David
+2026-06-29 08:18:03 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: David
+2026-06-29 08:18:04 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:18:04 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:18:05 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:18:05 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:18:05 [main] INFO  RestUtil - Response Time: 1089 ms
+2026-06-29 08:18:05 [main] INFO  RestUtil - Response Time: 1089 ms
+2026-06-29 08:18:05 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:18:05 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:18:05 [main] INFO  RestUtil - Response Body Length: 205
+2026-06-29 08:18:05 [main] INFO  RestUtil - Response Body Length: 205
+2026-06-29 08:18:05 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3991,
+  "booking" : {
+    "firstname" : "David",
+    "lastname" : "Brown",
+    "totalprice" : 4500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-03",
+      "checkout" : "2026-07-08"
+    },
+    "additionalneeds" : "Late checkout"
+  }
+}
+2026-06-29 08:18:05 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 3991,
+  "booking" : {
+    "firstname" : "David",
+    "lastname" : "Brown",
+    "totalprice" : 4500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-03",
+      "checkout" : "2026-07-08"
+    },
+    "additionalneeds" : "Late checkout"
+  }
+}
+2026-06-29 08:18:05 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:18:05 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:18:06 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3991
+2026-06-29 08:18:06 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 3991
+2026-06-29 08:18:06 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: David_Updated
+2026-06-29 08:18:06 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: David_Updated
+2026-06-29 08:18:07 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:18:07 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:18:07 [main] INFO  RestUtil - Response Body Length: 184
+2026-06-29 08:18:07 [main] INFO  RestUtil - Response Body Length: 184
+2026-06-29 08:18:07 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"David_Updated","lastname":"Brown","totalprice":4500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-03","checkout":"2026-07-08"},"additionalneeds":"Late checkout"}
+2026-06-29 08:18:07 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"David_Updated","lastname":"Brown","totalprice":4500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-03","checkout":"2026-07-08"},"additionalneeds":"Late checkout"}
+2026-06-29 08:18:07 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:18:07 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:18:08 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:18:08 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:18:08 [main] INFO  RestUtil - Response Body Length: 184
+2026-06-29 08:18:08 [main] INFO  RestUtil - Response Body Length: 184
+2026-06-29 08:18:08 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"David_Updated","lastname":"Brown","totalprice":4500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-03","checkout":"2026-07-08"},"additionalneeds":"Late checkout"}
+2026-06-29 08:18:08 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"David_Updated","lastname":"Brown","totalprice":4500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-03","checkout":"2026-07-08"},"additionalneeds":"Late checkout"}
+2026-06-29 08:18:08 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:18:08 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:18:08 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:18:08 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:28:07 [main] ERROR CSVDataProvider - Error reading CSV file: nullsrc/test/resources/testData/bookings.csv
+java.io.FileNotFoundException: nullsrc/test/resources/testData/bookings.csv (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at apiautomation.restfulbooker.utils.CSVDataProvider.readCSV(CSVDataProvider.java:30) ~[test-classes/:?]
+	at apiautomation.restfulbooker.utils.CSVDataProvider.getBookingData(CSVDataProvider.java:76) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:809) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:734) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-06-29 08:28:07 [main] ERROR CSVDataProvider - Error reading CSV file: nullsrc/test/resources/testData/bookings.csv
+java.io.FileNotFoundException: nullsrc/test/resources/testData/bookings.csv (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at apiautomation.restfulbooker.utils.CSVDataProvider.readCSV(CSVDataProvider.java:30) ~[test-classes/:?]
+	at apiautomation.restfulbooker.utils.CSVDataProvider.getBookingData(CSVDataProvider.java:76) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:809) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:734) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-06-29 08:28:07 [main] ERROR CSVDataProvider - Error reading CSV file: nullsrc/test/resources/testData/bookings.csv
+java.io.FileNotFoundException: nullsrc/test/resources/testData/bookings.csv (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at apiautomation.restfulbooker.utils.CSVDataProvider.readCSV(CSVDataProvider.java:30) ~[test-classes/:?]
+	at apiautomation.restfulbooker.utils.CSVDataProvider.getBookingData(CSVDataProvider.java:76) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:809) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:734) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-06-29 08:28:07 [main] ERROR CSVDataProvider - Error reading CSV file: nullsrc/test/resources/testData/bookings.csv
+java.io.FileNotFoundException: nullsrc/test/resources/testData/bookings.csv (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at apiautomation.restfulbooker.utils.CSVDataProvider.readCSV(CSVDataProvider.java:30) ~[test-classes/:?]
+	at apiautomation.restfulbooker.utils.CSVDataProvider.getBookingData(CSVDataProvider.java:76) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:809) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:734) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-06-29 08:29:59 [main] INFO  CSVDataProvider - Total CSV data rows: 5
+2026-06-29 08:29:59 [main] INFO  CSVDataProvider - Total CSV data rows: 5
+2026-06-29 08:29:59 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:29:59 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:29:59 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=John, lastName=Doe
+2026-06-29 08:29:59 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=John, lastName=Doe
+2026-06-29 08:30:04 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:04 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:04 [main] INFO  RestUtil - Response Time: 3606 ms
+2026-06-29 08:30:04 [main] INFO  RestUtil - Response Time: 3606 ms
+2026-06-29 08:30:04 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:04 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:04 [main] INFO  RestUtil - Response Body Length: 197
+2026-06-29 08:30:04 [main] INFO  RestUtil - Response Body Length: 197
+2026-06-29 08:30:05 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 4975,
+  "booking" : {
+    "firstname" : "John",
+    "lastname" : "Doe",
+    "totalprice" : 5000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-05",
+      "checkout" : "2026-07-10"
+    },
+    "additionalneeds" : "Breakfast"
+  }
+}
+2026-06-29 08:30:05 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 4975,
+  "booking" : {
+    "firstname" : "John",
+    "lastname" : "Doe",
+    "totalprice" : 5000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-05",
+      "checkout" : "2026-07-10"
+    },
+    "additionalneeds" : "Breakfast"
+  }
+}
+2026-06-29 08:30:05 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:05 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:06 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 4975
+2026-06-29 08:30:06 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 4975
+2026-06-29 08:30:06 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: John Doe
+2026-06-29 08:30:06 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: John Doe
+2026-06-29 08:30:06 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:06 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:06 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:30:06 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:30:06 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Jane, lastName=Smith
+2026-06-29 08:30:06 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Jane, lastName=Smith
+2026-06-29 08:30:07 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:07 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:07 [main] INFO  RestUtil - Response Time: 1277 ms
+2026-06-29 08:30:07 [main] INFO  RestUtil - Response Time: 1277 ms
+2026-06-29 08:30:07 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:07 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:07 [main] INFO  RestUtil - Response Body Length: 198
+2026-06-29 08:30:07 [main] INFO  RestUtil - Response Body Length: 198
+2026-06-29 08:30:07 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5005,
+  "booking" : {
+    "firstname" : "Jane",
+    "lastname" : "Smith",
+    "totalprice" : 7500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-08",
+      "checkout" : "2026-07-15"
+    },
+    "additionalneeds" : "Parking"
+  }
+}
+2026-06-29 08:30:07 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5005,
+  "booking" : {
+    "firstname" : "Jane",
+    "lastname" : "Smith",
+    "totalprice" : 7500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-08",
+      "checkout" : "2026-07-15"
+    },
+    "additionalneeds" : "Parking"
+  }
+}
+2026-06-29 08:30:07 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:07 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:07 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5005
+2026-06-29 08:30:07 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5005
+2026-06-29 08:30:08 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Jane Smith
+2026-06-29 08:30:08 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Jane Smith
+2026-06-29 08:30:08 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:08 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:08 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:30:08 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:30:08 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Mike, lastName=Johnson
+2026-06-29 08:30:08 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Mike, lastName=Johnson
+2026-06-29 08:30:09 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:09 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:09 [main] INFO  RestUtil - Response Time: 1368 ms
+2026-06-29 08:30:09 [main] INFO  RestUtil - Response Time: 1368 ms
+2026-06-29 08:30:09 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:09 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:09 [main] INFO  RestUtil - Response Body Length: 196
+2026-06-29 08:30:09 [main] INFO  RestUtil - Response Body Length: 196
+2026-06-29 08:30:09 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5019,
+  "booking" : {
+    "firstname" : "Mike",
+    "lastname" : "Johnson",
+    "totalprice" : 3000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-01",
+      "checkout" : "2026-07-05"
+    },
+    "additionalneeds" : "WiFi"
+  }
+}
+2026-06-29 08:30:09 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5019,
+  "booking" : {
+    "firstname" : "Mike",
+    "lastname" : "Johnson",
+    "totalprice" : 3000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-01",
+      "checkout" : "2026-07-05"
+    },
+    "additionalneeds" : "WiFi"
+  }
+}
+2026-06-29 08:30:09 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:09 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:09 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5019
+2026-06-29 08:30:09 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5019
+2026-06-29 08:30:09 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Mike Johnson
+2026-06-29 08:30:09 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Mike Johnson
+2026-06-29 08:30:09 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:09 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:09 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:30:09 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:30:09 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Sarah, lastName=Williams
+2026-06-29 08:30:09 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=Sarah, lastName=Williams
+2026-06-29 08:30:10 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:10 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:10 [main] INFO  RestUtil - Response Time: 1271 ms
+2026-06-29 08:30:10 [main] INFO  RestUtil - Response Time: 1271 ms
+2026-06-29 08:30:10 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:10 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:10 [main] INFO  RestUtil - Response Body Length: 216
+2026-06-29 08:30:10 [main] INFO  RestUtil - Response Body Length: 216
+2026-06-29 08:30:10 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5032,
+  "booking" : {
+    "firstname" : "Sarah",
+    "lastname" : "Williams",
+    "totalprice" : 10000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-12",
+      "checkout" : "2026-07-20"
+    },
+    "additionalneeds" : "Breakfast and Parking"
+  }
+}
+2026-06-29 08:30:10 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5032,
+  "booking" : {
+    "firstname" : "Sarah",
+    "lastname" : "Williams",
+    "totalprice" : 10000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-12",
+      "checkout" : "2026-07-20"
+    },
+    "additionalneeds" : "Breakfast and Parking"
+  }
+}
+2026-06-29 08:30:10 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:10 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:10 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5032
+2026-06-29 08:30:10 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5032
+2026-06-29 08:30:10 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Sarah Williams
+2026-06-29 08:30:10 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: Sarah Williams
+2026-06-29 08:30:10 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:10 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:10 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:30:10 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateBookingWithCSVData STARTED ==========
+2026-06-29 08:30:10 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=David, lastName=Brown
+2026-06-29 08:30:10 [main] INFO  BookingAPITest_CSVDataProvider - Test iteration with data: firstName=David, lastName=Brown
+2026-06-29 08:30:12 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:12 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:12 [main] INFO  RestUtil - Response Time: 1179 ms
+2026-06-29 08:30:12 [main] INFO  RestUtil - Response Time: 1179 ms
+2026-06-29 08:30:12 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:12 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:12 [main] INFO  RestUtil - Response Body Length: 205
+2026-06-29 08:30:12 [main] INFO  RestUtil - Response Body Length: 205
+2026-06-29 08:30:12 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5040,
+  "booking" : {
+    "firstname" : "David",
+    "lastname" : "Brown",
+    "totalprice" : 4500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-03",
+      "checkout" : "2026-07-08"
+    },
+    "additionalneeds" : "Late checkout"
+  }
+}
+2026-06-29 08:30:12 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5040,
+  "booking" : {
+    "firstname" : "David",
+    "lastname" : "Brown",
+    "totalprice" : 4500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-03",
+      "checkout" : "2026-07-08"
+    },
+    "additionalneeds" : "Late checkout"
+  }
+}
+2026-06-29 08:30:12 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:12 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:12 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5040
+2026-06-29 08:30:12 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5040
+2026-06-29 08:30:12 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: David Brown
+2026-06-29 08:30:12 [main] INFO  BookingAPITest_CSVDataProvider - Booking details validated: David Brown
+2026-06-29 08:30:12 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:12 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:12 [main] INFO  CSVDataProvider - Total CSV data rows: 5
+2026-06-29 08:30:12 [main] INFO  CSVDataProvider - Total CSV data rows: 5
+2026-06-29 08:30:12 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:30:12 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:30:12 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: John
+2026-06-29 08:30:12 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: John
+2026-06-29 08:30:13 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:30:13 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:30:15 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:15 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:15 [main] INFO  RestUtil - Response Time: 1304 ms
+2026-06-29 08:30:15 [main] INFO  RestUtil - Response Time: 1304 ms
+2026-06-29 08:30:15 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:15 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:15 [main] INFO  RestUtil - Response Body Length: 197
+2026-06-29 08:30:15 [main] INFO  RestUtil - Response Body Length: 197
+2026-06-29 08:30:15 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5069,
+  "booking" : {
+    "firstname" : "John",
+    "lastname" : "Doe",
+    "totalprice" : 5000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-05",
+      "checkout" : "2026-07-10"
+    },
+    "additionalneeds" : "Breakfast"
+  }
+}
+2026-06-29 08:30:15 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5069,
+  "booking" : {
+    "firstname" : "John",
+    "lastname" : "Doe",
+    "totalprice" : 5000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-05",
+      "checkout" : "2026-07-10"
+    },
+    "additionalneeds" : "Breakfast"
+  }
+}
+2026-06-29 08:30:15 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:15 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:15 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5069
+2026-06-29 08:30:15 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5069
+2026-06-29 08:30:15 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: John_Updated
+2026-06-29 08:30:15 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: John_Updated
+2026-06-29 08:30:16 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:16 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:16 [main] INFO  RestUtil - Response Body Length: 176
+2026-06-29 08:30:16 [main] INFO  RestUtil - Response Body Length: 176
+2026-06-29 08:30:16 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"John_Updated","lastname":"Doe","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-05","checkout":"2026-07-10"},"additionalneeds":"Breakfast"}
+2026-06-29 08:30:16 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"John_Updated","lastname":"Doe","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-05","checkout":"2026-07-10"},"additionalneeds":"Breakfast"}
+2026-06-29 08:30:16 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:30:16 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:30:18 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:18 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:18 [main] INFO  RestUtil - Response Body Length: 176
+2026-06-29 08:30:18 [main] INFO  RestUtil - Response Body Length: 176
+2026-06-29 08:30:18 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"John_Updated","lastname":"Doe","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-05","checkout":"2026-07-10"},"additionalneeds":"Breakfast"}
+2026-06-29 08:30:18 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"John_Updated","lastname":"Doe","totalprice":5000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-05","checkout":"2026-07-10"},"additionalneeds":"Breakfast"}
+2026-06-29 08:30:18 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:30:18 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:30:18 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:18 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:18 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:30:18 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:30:18 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Jane
+2026-06-29 08:30:18 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Jane
+2026-06-29 08:30:19 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:30:19 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:30:20 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:20 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:20 [main] INFO  RestUtil - Response Time: 1277 ms
+2026-06-29 08:30:20 [main] INFO  RestUtil - Response Time: 1277 ms
+2026-06-29 08:30:20 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:20 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:20 [main] INFO  RestUtil - Response Body Length: 198
+2026-06-29 08:30:20 [main] INFO  RestUtil - Response Body Length: 198
+2026-06-29 08:30:20 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5126,
+  "booking" : {
+    "firstname" : "Jane",
+    "lastname" : "Smith",
+    "totalprice" : 7500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-08",
+      "checkout" : "2026-07-15"
+    },
+    "additionalneeds" : "Parking"
+  }
+}
+2026-06-29 08:30:20 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5126,
+  "booking" : {
+    "firstname" : "Jane",
+    "lastname" : "Smith",
+    "totalprice" : 7500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-08",
+      "checkout" : "2026-07-15"
+    },
+    "additionalneeds" : "Parking"
+  }
+}
+2026-06-29 08:30:20 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:20 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:20 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5126
+2026-06-29 08:30:20 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5126
+2026-06-29 08:30:20 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Jane_Updated
+2026-06-29 08:30:20 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Jane_Updated
+2026-06-29 08:30:22 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:22 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:22 [main] INFO  RestUtil - Response Body Length: 177
+2026-06-29 08:30:22 [main] INFO  RestUtil - Response Body Length: 177
+2026-06-29 08:30:22 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Jane_Updated","lastname":"Smith","totalprice":7500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-08","checkout":"2026-07-15"},"additionalneeds":"Parking"}
+2026-06-29 08:30:22 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Jane_Updated","lastname":"Smith","totalprice":7500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-08","checkout":"2026-07-15"},"additionalneeds":"Parking"}
+2026-06-29 08:30:22 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:30:22 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:30:23 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:23 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:23 [main] INFO  RestUtil - Response Body Length: 177
+2026-06-29 08:30:23 [main] INFO  RestUtil - Response Body Length: 177
+2026-06-29 08:30:23 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Jane_Updated","lastname":"Smith","totalprice":7500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-08","checkout":"2026-07-15"},"additionalneeds":"Parking"}
+2026-06-29 08:30:23 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Jane_Updated","lastname":"Smith","totalprice":7500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-08","checkout":"2026-07-15"},"additionalneeds":"Parking"}
+2026-06-29 08:30:23 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:30:23 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:30:23 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:23 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:23 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:30:23 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:30:23 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Mike
+2026-06-29 08:30:23 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Mike
+2026-06-29 08:30:24 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:30:24 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:30:26 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:26 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:26 [main] INFO  RestUtil - Response Time: 1400 ms
+2026-06-29 08:30:26 [main] INFO  RestUtil - Response Time: 1400 ms
+2026-06-29 08:30:26 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:26 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:26 [main] INFO  RestUtil - Response Body Length: 196
+2026-06-29 08:30:26 [main] INFO  RestUtil - Response Body Length: 196
+2026-06-29 08:30:26 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5169,
+  "booking" : {
+    "firstname" : "Mike",
+    "lastname" : "Johnson",
+    "totalprice" : 3000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-01",
+      "checkout" : "2026-07-05"
+    },
+    "additionalneeds" : "WiFi"
+  }
+}
+2026-06-29 08:30:26 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5169,
+  "booking" : {
+    "firstname" : "Mike",
+    "lastname" : "Johnson",
+    "totalprice" : 3000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-01",
+      "checkout" : "2026-07-05"
+    },
+    "additionalneeds" : "WiFi"
+  }
+}
+2026-06-29 08:30:26 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:26 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:26 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5169
+2026-06-29 08:30:26 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5169
+2026-06-29 08:30:26 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Mike_Updated
+2026-06-29 08:30:26 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Mike_Updated
+2026-06-29 08:30:27 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:27 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:27 [main] INFO  RestUtil - Response Body Length: 175
+2026-06-29 08:30:27 [main] INFO  RestUtil - Response Body Length: 175
+2026-06-29 08:30:27 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Mike_Updated","lastname":"Johnson","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-05"},"additionalneeds":"WiFi"}
+2026-06-29 08:30:27 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Mike_Updated","lastname":"Johnson","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-05"},"additionalneeds":"WiFi"}
+2026-06-29 08:30:27 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:30:27 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:30:29 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:29 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:29 [main] INFO  RestUtil - Response Body Length: 175
+2026-06-29 08:30:29 [main] INFO  RestUtil - Response Body Length: 175
+2026-06-29 08:30:29 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Mike_Updated","lastname":"Johnson","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-05"},"additionalneeds":"WiFi"}
+2026-06-29 08:30:29 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Mike_Updated","lastname":"Johnson","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-01","checkout":"2026-07-05"},"additionalneeds":"WiFi"}
+2026-06-29 08:30:29 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:30:29 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:30:29 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:29 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:29 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:30:29 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:30:29 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Sarah
+2026-06-29 08:30:29 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: Sarah
+2026-06-29 08:30:30 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:30:30 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:30:32 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:32 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:32 [main] INFO  RestUtil - Response Time: 1358 ms
+2026-06-29 08:30:32 [main] INFO  RestUtil - Response Time: 1358 ms
+2026-06-29 08:30:32 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:32 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:32 [main] INFO  RestUtil - Response Body Length: 216
+2026-06-29 08:30:32 [main] INFO  RestUtil - Response Body Length: 216
+2026-06-29 08:30:32 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5217,
+  "booking" : {
+    "firstname" : "Sarah",
+    "lastname" : "Williams",
+    "totalprice" : 10000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-12",
+      "checkout" : "2026-07-20"
+    },
+    "additionalneeds" : "Breakfast and Parking"
+  }
+}
+2026-06-29 08:30:32 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5217,
+  "booking" : {
+    "firstname" : "Sarah",
+    "lastname" : "Williams",
+    "totalprice" : 10000,
+    "depositpaid" : true,
+    "bookingdates" : {
+      "checkin" : "2026-07-12",
+      "checkout" : "2026-07-20"
+    },
+    "additionalneeds" : "Breakfast and Parking"
+  }
+}
+2026-06-29 08:30:32 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:32 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:32 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5217
+2026-06-29 08:30:32 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5217
+2026-06-29 08:30:32 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Sarah_Updated
+2026-06-29 08:30:32 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: Sarah_Updated
+2026-06-29 08:30:33 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:33 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:33 [main] INFO  RestUtil - Response Body Length: 195
+2026-06-29 08:30:33 [main] INFO  RestUtil - Response Body Length: 195
+2026-06-29 08:30:33 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Sarah_Updated","lastname":"Williams","totalprice":10000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-12","checkout":"2026-07-20"},"additionalneeds":"Breakfast and Parking"}
+2026-06-29 08:30:33 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Sarah_Updated","lastname":"Williams","totalprice":10000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-12","checkout":"2026-07-20"},"additionalneeds":"Breakfast and Parking"}
+2026-06-29 08:30:33 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:30:33 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:30:34 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:34 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:34 [main] INFO  RestUtil - Response Body Length: 195
+2026-06-29 08:30:34 [main] INFO  RestUtil - Response Body Length: 195
+2026-06-29 08:30:34 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Sarah_Updated","lastname":"Williams","totalprice":10000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-12","checkout":"2026-07-20"},"additionalneeds":"Breakfast and Parking"}
+2026-06-29 08:30:34 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"Sarah_Updated","lastname":"Williams","totalprice":10000,"depositpaid":true,"bookingdates":{"checkin":"2026-07-12","checkout":"2026-07-20"},"additionalneeds":"Breakfast and Parking"}
+2026-06-29 08:30:34 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:30:34 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:30:34 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:34 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:34 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:30:34 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST: testCreateUpdateAndVerify STARTED ==========
+2026-06-29 08:30:34 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: David
+2026-06-29 08:30:34 [main] INFO  BookingAPITest_CSVDataProvider - Testing Create, Update, and Verify with data: David
+2026-06-29 08:30:36 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:30:36 [main] INFO  BookingAPITest_CSVDataProvider - Token generated for update operation
+2026-06-29 08:30:37 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:37 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:37 [main] INFO  RestUtil - Response Time: 1484 ms
+2026-06-29 08:30:37 [main] INFO  RestUtil - Response Time: 1484 ms
+2026-06-29 08:30:37 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:37 [main] INFO  RestUtil - Response Content-Type: application/json; charset=utf-8
+2026-06-29 08:30:37 [main] INFO  RestUtil - Response Body Length: 205
+2026-06-29 08:30:37 [main] INFO  RestUtil - Response Body Length: 205
+2026-06-29 08:30:37 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5269,
+  "booking" : {
+    "firstname" : "David",
+    "lastname" : "Brown",
+    "totalprice" : 4500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-03",
+      "checkout" : "2026-07-08"
+    },
+    "additionalneeds" : "Late checkout"
+  }
+}
+2026-06-29 08:30:37 [main] INFO  RestUtil - Response Body (JSON):
+{
+  "bookingid" : 5269,
+  "booking" : {
+    "firstname" : "David",
+    "lastname" : "Brown",
+    "totalprice" : 4500,
+    "depositpaid" : false,
+    "bookingdates" : {
+      "checkin" : "2026-07-03",
+      "checkout" : "2026-07-08"
+    },
+    "additionalneeds" : "Late checkout"
+  }
+}
+2026-06-29 08:30:37 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:37 [main] INFO  RestUtil - ########### POST REQUEST COMPLETED ###########
+
+2026-06-29 08:30:37 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5269
+2026-06-29 08:30:37 [main] INFO  BookingAPITest_CSVDataProvider - Booking created successfully with ID: 5269
+2026-06-29 08:30:37 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: David_Updated
+2026-06-29 08:30:37 [main] INFO  BookingAPITest_CSVDataProvider - Updating booking with new firstname: David_Updated
+2026-06-29 08:30:39 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:39 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:39 [main] INFO  RestUtil - Response Body Length: 184
+2026-06-29 08:30:39 [main] INFO  RestUtil - Response Body Length: 184
+2026-06-29 08:30:39 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"David_Updated","lastname":"Brown","totalprice":4500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-03","checkout":"2026-07-08"},"additionalneeds":"Late checkout"}
+2026-06-29 08:30:39 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"David_Updated","lastname":"Brown","totalprice":4500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-03","checkout":"2026-07-08"},"additionalneeds":"Late checkout"}
+2026-06-29 08:30:39 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:30:39 [main] INFO  RestUtil - ########### PUT REQUEST COMPLETED ###########
+
+2026-06-29 08:30:40 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:40 [main] INFO  RestUtil - Response Status Code: 200
+2026-06-29 08:30:40 [main] INFO  RestUtil - Response Body Length: 184
+2026-06-29 08:30:40 [main] INFO  RestUtil - Response Body Length: 184
+2026-06-29 08:30:40 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"David_Updated","lastname":"Brown","totalprice":4500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-03","checkout":"2026-07-08"},"additionalneeds":"Late checkout"}
+2026-06-29 08:30:40 [main] INFO  RestUtil - Response Body (JSON):
+{"firstname":"David_Updated","lastname":"Brown","totalprice":4500,"depositpaid":false,"bookingdates":{"checkin":"2026-07-03","checkout":"2026-07-08"},"additionalneeds":"Late checkout"}
+2026-06-29 08:30:40 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:30:40 [main] INFO  RestUtil - ########### GET REQUEST COMPLETED ###########
+
+2026-06-29 08:30:40 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+
+2026-06-29 08:30:40 [main] INFO  BookingAPITest_CSVDataProvider - ========== TEST PASSED ==========
+

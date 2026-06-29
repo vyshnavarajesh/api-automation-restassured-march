@@ -33,9 +33,9 @@ public class ExtentManager {
             extent = new ExtentReports();
             extent.attachReporter(spark);
 
-            extent.setSystemInfo("QA Name", "Usename");
+            extent.setSystemInfo("QA Name", "API Test User");
             extent.setSystemInfo("Environment", "Stage");
-            extent.setSystemInfo("Platform", "Android");
+            extent.setSystemInfo("Platform", "NA");
         }catch(Exception e) {
         	e.getStackTrace();
         }

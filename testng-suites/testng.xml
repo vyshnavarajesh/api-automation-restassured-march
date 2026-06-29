@@ -8,8 +8,10 @@
   <test thread-count="5" name="Test">
  
     <classes>
-      <class name="apiautomation.restfulbooker.testsV1.EndToEndBookingFlowTest"/>
-      <class name="apiautomation.restfulbooker.testsWithRestUtil.CreateBookingAPI_POST_WithRestUtility"/>
+      <!--class name="apiautomation.restfulbooker.testsV1.EndToEndBookingFlowTest"/-->
+      <!--class name="apiautomation.restfulbooker.testsWithRestUtil.CreateBookingAPI_POST_WithRestUtility"/-->
+            <class name="apiautomation.restfulbooker.testsWithRestUtil.EndToEndTests_WithRestUtility"/>
+             <class name="apiautomation.restfulbooker.testsWithRestUtil.BookingAPITest_CSVDataProvider"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

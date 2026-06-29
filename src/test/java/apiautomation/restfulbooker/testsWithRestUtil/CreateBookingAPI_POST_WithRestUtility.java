@@ -38,8 +38,6 @@ public class CreateBookingAPI_POST_WithRestUtility {
 		
 	}
 	
-
-	
 	@Test(priority=1, enabled=false)
 	public void createBookingWithHashMap_withRestUtilV1() {
 	
